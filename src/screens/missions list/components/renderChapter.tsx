@@ -9,7 +9,7 @@ type Props = {
 };
 export const RenderChapter = ({ chapter }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
-
+  
 
   return (
     <View>
