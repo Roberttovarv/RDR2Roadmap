@@ -10,7 +10,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -26,7 +26,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -42,7 +42,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -58,7 +58,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -74,7 +74,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -90,7 +90,7 @@
     "ending_at_en": "Colter",
     "starting_at_es": "Colter",
     "ending_at_es": "Colter",
-    "chapter": 1.0,
+    "chapter": 1,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -106,7 +106,7 @@
     "ending_at_en": "South of Valentine",
     "starting_at_es": "Sureste de Strawberry",
     "ending_at_es": "Sur de Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -122,7 +122,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -138,7 +138,7 @@
     "ending_at_en": "Van Horn",
     "starting_at_es": "Van Horn Trading Post",
     "ending_at_es": "Van Horn",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -154,8 +154,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 2.0,
-    "deadline": 6.0,
+    "chapter": 2,
+    "deadline": 6,
     "notes": null,
     "completed": false
   },
@@ -170,7 +170,7 @@
     "ending_at_en": "Bluewater Marsh",
     "starting_at_es": "Pantano de Bluewater",
     "ending_at_es": "Pantano de Bluewater",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": "Only appears after interacting with the Night Folk ",
     "completed": false
@@ -186,7 +186,7 @@
     "ending_at_en": "Brandywine Drop",
     "starting_at_es": "Valentine",
     "ending_at_es": "Brandywine Drop",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -202,7 +202,7 @@
     "ending_at_en": "New Hanover",
     "starting_at_es": "New Hanover",
     "ending_at_es": "New Hanover",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -218,7 +218,7 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -234,7 +234,7 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -250,7 +250,7 @@
     "ending_at_en": "Caliban's Seat",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Asiento de Calibán",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -266,7 +266,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -282,7 +282,7 @@
     "ending_at_en": "Horseshoe Overlook",
     "starting_at_es": "Flatneck Station",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -298,7 +298,7 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -314,7 +314,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Blackwater",
     "ending_at_es": "Saint Denis",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -330,8 +330,8 @@
     "ending_at_en": "Chez Porter",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Chez Porter",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -346,7 +346,7 @@
     "ending_at_en": "Mirador de la Herradura",
     "starting_at_es": "Six Point Cabin",
     "ending_at_es": "Cabaña de Six Point",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -362,8 +362,8 @@
     "ending_at_en": "Mirador de la Herradura",
     "starting_at_es": "Horseshoe Overlook",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -378,8 +378,8 @@
     "ending_at_en": "Horseshoe Overlook",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -394,8 +394,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -410,8 +410,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -426,8 +426,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -442,7 +442,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -458,7 +458,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -474,8 +474,8 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
-    "deadline": 5.0,
+    "chapter": 2,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -490,7 +490,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -506,7 +506,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -522,8 +522,8 @@
     "ending_at_en": "The Heartlands",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Heartlands",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -538,7 +538,7 @@
     "ending_at_en": "Horseshoe Overlook",
     "starting_at_es": "Rancho Downes",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -554,7 +554,7 @@
     "ending_at_en": "Strawberry",
     "starting_at_es": "Lone Mule Stead",
     "ending_at_es": "Lone Mule Stead",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -570,7 +570,7 @@
     "ending_at_en": "Strawberry",
     "starting_at_es": "Strawberry",
     "ending_at_es": "Strawberry",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -586,8 +586,8 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -602,8 +602,8 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -618,8 +618,8 @@
     "ending_at_en": "Valentine Station",
     "starting_at_es": "Cumberland Forest",
     "ending_at_es": "Valentine Station",
-    "chapter": 2.0,
-    "deadline": 3.0,
+    "chapter": 2,
+    "deadline": 3,
     "notes": null,
     "completed": false
   },
@@ -634,7 +634,7 @@
     "ending_at_en": "Rancho Emerald",
     "starting_at_es": "Emerald Ranch",
     "ending_at_es": "Rancho Emerald",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -650,7 +650,7 @@
     "ending_at_en": "Horseshoe Overlook",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -666,7 +666,7 @@
     "ending_at_en": "Old Trail Rise",
     "starting_at_es": "Cornwall Kerosene & Tar",
     "ending_at_es": "Old Trail Rise",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -682,7 +682,7 @@
     "ending_at_en": "Old Trail Rise",
     "starting_at_es": "Cornwall Kerosene & Tar",
     "ending_at_es": "Old Trail Rise",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": "Auto completes if ignored long-enough",
     "completed": false
@@ -698,7 +698,7 @@
     "ending_at_en": "The Heartlands",
     "starting_at_es": "Old Trail Rise",
     "ending_at_es": "Heartlands",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -714,7 +714,7 @@
     "ending_at_en": "Dakota River",
     "starting_at_es": "Monto's Rest",
     "ending_at_es": "Dakota River",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -730,7 +730,7 @@
     "ending_at_en": "Horseshoe Overlook",
     "starting_at_es": "Mirador de la Herradura",
     "ending_at_es": "Mirador de la Herradura",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -746,7 +746,7 @@
     "ending_at_en": "San Luis River",
     "starting_at_es": "Gill Landing ",
     "ending_at_es": "San Luis River",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -762,7 +762,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -778,7 +778,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Mirador de la herradura",
     "ending_at_es": "Clemens Point",
-    "chapter": 2.0,
+    "chapter": 2,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -794,7 +794,7 @@
     "ending_at_en": "Rhodes",
     "starting_at_es": "Clemens Point ",
     "ending_at_es": "Rhodes",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -810,7 +810,7 @@
     "ending_at_en": "West of Bluewater Marsh",
     "starting_at_es": "Oeste del Pantano de Bluewater",
     "ending_at_es": "Oeste del Pantano de Bluewater",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -826,8 +826,8 @@
     "ending_at_en": "Lonnie's Shack",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Lonnie's Shack",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -842,8 +842,8 @@
     "ending_at_en": "Radley's Pasture",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Radley's Pasture",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -858,8 +858,8 @@
     "ending_at_en": "Ringneck Creek",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Ringneck Creek",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -874,8 +874,8 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -890,8 +890,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -906,8 +906,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -922,7 +922,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -938,7 +938,7 @@
     "ending_at_en": "Rhodes",
     "starting_at_es": "Rhodes",
     "ending_at_es": "Rhodes",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -954,7 +954,7 @@
     "ending_at_en": "Rhodes",
     "starting_at_es": "Rhodes",
     "ending_at_es": "Rhodes",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -970,8 +970,8 @@
     "ending_at_en": "Caliga Hall",
     "starting_at_es": "Caliga Hall",
     "ending_at_es": "Caliga Hall",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -986,8 +986,8 @@
     "ending_at_en": "Braithwaite Manor",
     "starting_at_es": "Caliga Hall",
     "ending_at_es": "Mansión Braithwaite",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -1002,8 +1002,8 @@
     "ending_at_en": "Bolger Glade",
     "starting_at_es": "Caliga Hall",
     "ending_at_es": "Bolger Glade",
-    "chapter": 3.0,
-    "deadline": 4.0,
+    "chapter": 3,
+    "deadline": 4,
     "notes": null,
     "completed": false
   },
@@ -1018,7 +1018,7 @@
     "ending_at_en": "Clemens Clove",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Clove",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1034,7 +1034,7 @@
     "ending_at_en": "Braithwaite Manor",
     "starting_at_es": "Mansión Braithwaite",
     "ending_at_es": "Mansión Braithwaite",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1050,7 +1050,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Caliga Hall",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1066,7 +1066,7 @@
     "ending_at_en": "Caliga Hall",
     "starting_at_es": "Mansión Braithwaite",
     "ending_at_es": "Caliga Hall",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1082,7 +1082,7 @@
     "ending_at_en": "Rhodes",
     "starting_at_es": "Clemens Point ",
     "ending_at_es": "Rhodes",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1098,7 +1098,7 @@
     "ending_at_en": "Siltwater Strand",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Siltwater Strand",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1114,7 +1114,7 @@
     "ending_at_en": "Scarlett Meadows",
     "starting_at_es": "Clemens Point ",
     "ending_at_es": "Scarlett Meadows",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1130,7 +1130,7 @@
     "ending_at_en": "Eris Field",
     "starting_at_es": "Rhodes",
     "ending_at_es": "Eris Field",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1146,7 +1146,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1162,7 +1162,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1178,7 +1178,7 @@
     "ending_at_en": "Clemens Point",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Clemens Point",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1194,7 +1194,7 @@
     "ending_at_en": "Scarlett Meadows",
     "starting_at_es": "Rhodes",
     "ending_at_es": "Scarlett Meadows",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1210,7 +1210,7 @@
     "ending_at_en": "Braithwaite Manor",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Mansión Braithwaite",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1226,7 +1226,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Clemens Point",
     "ending_at_es": "Saint Denis",
-    "chapter": 3.0,
+    "chapter": 3,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1242,7 +1242,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1258,7 +1258,7 @@
     "ending_at_en": "Valentine",
     "starting_at_es": "Valentine",
     "ending_at_es": "Valentine",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1274,7 +1274,7 @@
     "ending_at_en": "Southern Rhodes",
     "starting_at_es": "Sur de Rhodes",
     "ending_at_es": "Sur de Rhodes",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1290,7 +1290,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1306,7 +1306,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1322,7 +1322,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1338,8 +1338,8 @@
     "ending_at_en": "Bayou Nwa",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Bayou Nwa",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1354,8 +1354,8 @@
     "ending_at_en": "Scarlett Meadows",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Scarlett Meadows",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1370,8 +1370,8 @@
     "ending_at_en": "Shady Belle",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Shady Belle",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1386,8 +1386,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1402,8 +1402,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1418,8 +1418,8 @@
     "ending_at_en": "Shady Belle",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Shady Belle",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1434,8 +1434,8 @@
     "ending_at_en": "Clemens Clove",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Clemens Clove",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1450,7 +1450,7 @@
     "ending_at_en": "Rhodes",
     "starting_at_es": "Rhodes",
     "ending_at_es": "Rhodes",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1466,7 +1466,7 @@
     "ending_at_en": "Scarlett Meadows",
     "starting_at_es": "Scarlett Meadows",
     "ending_at_es": "Scarlett Meadows",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1482,7 +1482,7 @@
     "ending_at_en": "Scarlett Meadows",
     "starting_at_es": "Scarlett Meadows",
     "ending_at_es": "Scarlett Meadows",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1498,8 +1498,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1514,8 +1514,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1530,8 +1530,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
-    "deadline": 5.0,
+    "chapter": 4,
+    "deadline": 5,
     "notes": null,
     "completed": false
   },
@@ -1546,7 +1546,7 @@
     "ending_at_en": "Radley's House",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Radley's House",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1562,7 +1562,7 @@
     "ending_at_en": "Shady Belle",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Shady Belle",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1578,7 +1578,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1594,7 +1594,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1610,7 +1610,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1626,7 +1626,7 @@
     "ending_at_en": "Shady Belle",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Shady Belle",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1642,7 +1642,7 @@
     "ending_at_en": "Bayou Nwa",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Bayou Nwa",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1658,7 +1658,7 @@
     "ending_at_en": "Lagras",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Lagras",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1674,7 +1674,7 @@
     "ending_at_en": "Shady Belle",
     "starting_at_es": "Lagras",
     "ending_at_es": "Shady Belle",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1690,7 +1690,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1706,7 +1706,7 @@
     "ending_at_en": "Twin Stack Pass",
     "starting_at_es": "Heartlands",
     "ending_at_es": "Twin Stack Pass",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1722,7 +1722,7 @@
     "ending_at_en": "Antenor commercial boat",
     "starting_at_es": "Shady Belle",
     "ending_at_es": "Antenor commercial boat",
-    "chapter": 4.0,
+    "chapter": 4,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1738,7 +1738,7 @@
     "ending_at_en": "La Capilla",
     "starting_at_es": "Guarma",
     "ending_at_es": "La Capilla",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1754,7 +1754,7 @@
     "ending_at_en": "La Capilla",
     "starting_at_es": "Guarma",
     "ending_at_es": "La Capilla",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1770,7 +1770,7 @@
     "ending_at_en": "La Capilla",
     "starting_at_es": "Arroyo de la Víbora",
     "ending_at_es": "La Capilla",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1786,7 +1786,7 @@
     "ending_at_en": "Cinco Torres",
     "starting_at_es": "Cinco Torres",
     "ending_at_es": "Cinco Torres",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1802,7 +1802,7 @@
     "ending_at_en": "Caribbean Sea",
     "starting_at_es": "Manicato",
     "ending_at_es": "Mar Caribe",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1818,7 +1818,7 @@
     "ending_at_en": "Lakay",
     "starting_at_es": "Van Horn Trading Post",
     "ending_at_es": "Lakay",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1834,7 +1834,7 @@
     "ending_at_en": "Lakay",
     "starting_at_es": "Lakay",
     "ending_at_es": "Lakay",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1850,7 +1850,7 @@
     "ending_at_en": "Butcher Creek",
     "starting_at_es": "Butcher Creek",
     "ending_at_es": "Butcher Creek",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1866,7 +1866,7 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1882,7 +1882,7 @@
     "ending_at_en": "Beaver Hollow",
     "starting_at_es": "Lakay",
     "ending_at_es": "Beaver Hollow",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": "After this point Bounty Hunting is locked until Epilogue I",
     "completed": false
@@ -1898,7 +1898,7 @@
     "ending_at_en": "Veteran Homestead",
     "starting_at_es": "Casa del Veterano",
     "ending_at_es": "Casa del Veterano",
-    "chapter": 5.0,
+    "chapter": 5,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1914,7 +1914,7 @@
     "ending_at_en": "Kamassa River",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Kamassa River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1930,7 +1930,7 @@
     "ending_at_en": "Beaver Hollow",
     "starting_at_es": "Copperhead Landing",
     "ending_at_es": "Beaver Hollow",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1946,7 +1946,7 @@
     "ending_at_en": "Kamassa River",
     "starting_at_es": "Annesburg",
     "ending_at_es": "Kamassa River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -1962,8 +1962,8 @@
     "ending_at_en": "Annesburg",
     "starting_at_es": "Annesburg",
     "ending_at_es": "Annesburg",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
     "completed": false
   },
@@ -1978,8 +1978,8 @@
     "ending_at_en": "Annesburg",
     "starting_at_es": "Annesburg",
     "ending_at_es": "Annesburg",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
     "completed": false
   },
@@ -1994,8 +1994,8 @@
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"The Fine Art of Conversation\" | Only available if \"Brothers and Sisters, One and All\" is completed",
     "completed": false
   },
@@ -2010,8 +2010,8 @@
     "ending_at_en": "Braithwaite Manor",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Mansión Braithwaite",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Our Best Selves\" ",
     "completed": false
   },
@@ -2026,8 +2026,8 @@
     "ending_at_en": "Riggs Station",
     "starting_at_es": "Mansión Braithwaite",
     "ending_at_es": "Riggs Station",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Our Best Selves\" ",
     "completed": false
   },
@@ -2042,8 +2042,8 @@
     "ending_at_en": "Beaver Hollow",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Beaver Hollow",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"My Last Boy\" ",
     "completed": false
   },
@@ -2058,8 +2058,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Money Lending and Other Sins VII\" ",
     "completed": false
   },
@@ -2074,8 +2074,8 @@
     "ending_at_en": null,
     "starting_at_es": null,
     "ending_at_es": null,
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"Money Lending and Other Sins VII\" ",
     "completed": false
   },
@@ -2090,8 +2090,8 @@
     "ending_at_en": "Beaver Hollow",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Beaver Hollow",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Must be completed by \"My Last Boy\" ",
     "completed": false
   },
@@ -2106,7 +2106,7 @@
     "ending_at_en": "Kamassa River",
     "starting_at_es": "Raonoke Ridge",
     "ending_at_es": "Kamassa River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2122,7 +2122,7 @@
     "ending_at_en": "Bacchus Station",
     "starting_at_es": "Bacchus Station",
     "ending_at_es": "Bacchus Station",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2138,7 +2138,7 @@
     "ending_at_en": "Lannahechee River",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Lannahechee River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2154,8 +2154,8 @@
     "ending_at_en": "O'Creagh's Run",
     "starting_at_es": "Reserva India Wapiti",
     "ending_at_es": "O'Creagh's Run",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Only available if agreeing to help in \"A Rage Unleashed\"",
     "completed": false
   },
@@ -2170,8 +2170,8 @@
     "ending_at_en": "Wapiti Indian Reservation",
     "starting_at_es": "Reserva India Wapiti",
     "ending_at_es": "Reserva India Wapiti",
-    "chapter": 6.0,
-    "deadline": 7.0,
+    "chapter": 6,
+    "deadline": "EP1",
     "notes": "Only available if agreeing to help in \"Archeology for Beginners\"",
     "completed": false
   },
@@ -2186,7 +2186,7 @@
     "ending_at_en": "Emerald Station",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Emerald Station",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2202,7 +2202,7 @@
     "ending_at_en": "Beaver Hollow",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Beaver Hollow",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2218,7 +2218,7 @@
     "ending_at_en": "Dakota River",
     "starting_at_es": "Cumberland Forest",
     "ending_at_es": "Dakota River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2234,7 +2234,7 @@
     "ending_at_en": "Dakota River",
     "starting_at_es": "Reserva India Wapiti",
     "ending_at_es": "Dakota River",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2250,7 +2250,7 @@
     "ending_at_en": "Hanging Dog Ranch",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Hanging Dog Ranch",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2266,7 +2266,7 @@
     "ending_at_en": "Hanging Dog Ranch",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Hanging Dog Ranch",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2282,7 +2282,7 @@
     "ending_at_en": "Willard Rest",
     "starting_at_es": "Willard Rest",
     "ending_at_es": "Willard Rest",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": "All encounters can only be seen by visiting 3 times before the end of the main story, and then visiting her once in the epilogue",
     "completed": false
@@ -2298,7 +2298,7 @@
     "ending_at_en": "Annesburg",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Annesburg",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": " Starting here is the main story's conclusion |  You will not be able to play freely again until Epilogue I ",
     "completed": false
@@ -2314,7 +2314,7 @@
     "ending_at_en": "Bacchus Station",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Bacchus Station",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
@@ -2330,7 +2330,7 @@
     "ending_at_en": "Grizzlies East",
     "starting_at_es": "Beaver Hollow",
     "ending_at_es": "Grizzlies East",
-    "chapter": 6.0,
+    "chapter": 6,
     "deadline": null,
     "notes": null,
     "completed": false
