@@ -14,9 +14,7 @@ export const MissionList = ({ chapter }: Props) => {
       data={missionsToRender as Mission[]}
       keyExtractor={(item) => item.ID.toString()}
       renderItem={renderItem}
-      scrollEnabled={false} // 👈 clave en iOS
-      removeClippedSubviews={false} // evita recortes al colapsar/expandir
-      contentContainerStyle={{ paddingBottom: 8 }} // evita “salto” al final
+
     />
   );
 };
