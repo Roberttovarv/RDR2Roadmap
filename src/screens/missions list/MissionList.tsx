@@ -6,7 +6,7 @@ type Props = {
     chapter: number | string
 }
 export const MissionList = ({chapter}: Props) => {
-  const missionsToRender = missionsData.filter(mission => mission.chapter === chapter)
+  const missionsToRender = missionsData.filter(mission => String(mission.chapter) === String(chapter))
   return (
     <FlatList
       data={missionsToRender as Mission[]}

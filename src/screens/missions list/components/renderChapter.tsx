@@ -10,26 +10,27 @@ type Props = {
 export const RenderChapter = ({ chapter }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const handleOpen = () => {
-    setOpen(!open), console.log("Cambiado");
-  };
+
   return (
     <View>
       <View style={styles.chapterContainer}>
-        <Pressable onPress={handleOpen} style={styles.header}>
+        <Pressable onPress={() => setOpen(!open)} >
+          <View style={styles.header}>
+
           <Text>CHAPTER {chapter}</Text>
           <Ionicons
             name={open ? "caret-up" : "caret-down"}
             size={24}
             color="black"
-          />
+            />
+            </View>
         </Pressable>
+      </View>
         {open && (
           <View style={styles.body}>
             <MissionList chapter={chapter} />
           </View>
         )}
-      </View>
     </View>
   );
 };

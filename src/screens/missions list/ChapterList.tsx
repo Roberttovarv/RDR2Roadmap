@@ -7,6 +7,7 @@ export const ChaperList = () => {
         <FlatList
         data={chapters}
         keyExtractor={chapter => chapter.toString()}
-        renderItem={({item}) => <RenderChapter chapter={item} /> } />
+        renderItem={({item}) => <RenderChapter chapter={item} /> }
+        removeClippedSubviews={false} />
     )
 }
