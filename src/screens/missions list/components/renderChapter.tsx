@@ -1,21 +1,40 @@
-import { Text, View, StyleSheet } from "react-native";
+import { useState } from "react";
+import { Text, View, StyleSheet, Pressable } from "react-native";
 import { MissionList } from "../MissionList";
 import { Colors } from "../../../../utils/colors";
+import { Ionicons } from "@expo/vector-icons";
 
 type Props = {
   chapter: number | string;
 };
-export const renderChapter = ({ chapter }: Props) => {
+export const RenderChapter = ({ chapter }: Props) => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleOpen = () => {
+    setOpen(!open), console.log("Cambiado");
+  };
   return (
-    <>
+    <View>
       <View style={styles.chapterContainer}>
-        <Text style={styles.text}>CHAPTER {chapter}</Text>
+        <Pressable onPress={handleOpen} style={styles.header}>
+          <Text>CHAPTER {chapter}</Text>
+          <Ionicons
+            name={open ? "caret-up" : "caret-down"}
+            size={24}
+            color="black"
+          />
+        </Pressable>
+        {open && (
+          <View style={styles.body}>
+            <MissionList chapter={chapter} />
+          </View>
+        )}
       </View>
-      <MissionList chapter={chapter} />
-    </>
+    </View>
   );
 };
 const styles = StyleSheet.create({
+  root: { overflow: "visible" },
   chapterContainer: {
     flexDirection: "row",
     padding: 12,
@@ -29,6 +48,18 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: "800",
-    color: Colors.map 
+    color: Colors.map,
+  },
+  headerText: { fontSize: 20, fontWeight: "800", color: Colors.map },
+  header: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  body: {
+    paddingHorizontal: 4,
+    paddingBottom: 6,
+    backgroundColor: Colors.brown,
   },
 });
