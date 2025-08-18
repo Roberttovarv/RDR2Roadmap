@@ -15,7 +15,7 @@ export const ChapterCard = () => {
     return (
       <View style={styles.grid}>
         <ImageBackground
-          source={require("../../assets/BackgroundCHAPTER.png")}
+          source={require("../../assets/Background CHAPTER.png")}
           resizeMode="stretch"
         >
           <View>
