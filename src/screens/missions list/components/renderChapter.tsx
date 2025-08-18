@@ -2,35 +2,22 @@ import { useState } from "react";
 import { Text, View, StyleSheet, Pressable } from "react-native";
 import { MissionList } from "../MissionList";
 import { Colors } from "../../../../utils/colors";
-import { Ionicons } from "@expo/vector-icons";
 
 type Props = {
   chapter: number | string;
 };
 export const RenderChapter = ({ chapter }: Props) => {
-  const [open, setOpen] = useState<boolean>(false);
-  
-
   return (
     <View>
       <View style={styles.chapterContainer}>
-        <Pressable onPress={() => setOpen(!open)} >
-          <View style={styles.header}>
-
+        <View style={styles.header}>
           <Text>CHAPTER {chapter}</Text>
-          <Ionicons
-            name={open ? "caret-up" : "caret-down"}
-            size={24}
-            color="black"
-            />
-            </View>
-        </Pressable>
+        </View>
       </View>
-        {open && (
-          <View style={styles.body}>
-            <MissionList chapter={chapter} />
-          </View>
-        )}
+
+      <View style={styles.body}>
+        <MissionList chapter={chapter} />
+      </View>
     </View>
   );
 };

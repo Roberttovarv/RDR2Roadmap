@@ -14,3 +14,8 @@ export interface Mission {
   notes: string | null
   completed: boolean
 }
+
+export type RootStackParamList = {
+  Chapters: undefined;
+  Chapter: { chapter: number | string };
+};

@@ -2,7 +2,7 @@ import { Text, View, StyleSheet } from "react-native";
 import { Mission } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
-import { renderSymbol } from "./renderSymbol";
+import { RenderMissionSymbol } from "./RenderMissionSymbol";
 
 export const renderItem = ({ item }: { item: Mission }) => {
   const { mission_es, mission_en, sym, deadline } = item;
@@ -11,7 +11,7 @@ export const renderItem = ({ item }: { item: Mission }) => {
 
   return (
     <View style={styles.listContainer}>
-      <View style={styles.listSide}>{renderSymbol(sym)}</View>
+      <View style={styles.listSide}>{RenderMissionSymbol(sym)}</View>
       <View style={styles.listCenter}>
         <Text style={styles.text} numberOfLines={1} ellipsizeMode="tail">
           {title}

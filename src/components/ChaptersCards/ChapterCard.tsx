@@ -5,27 +5,45 @@ import {
   StyleSheet,
   Platform,
   ImageBackground,
+  Pressable,
 } from "react-native";
 import { Colors } from "../../../utils/colors";
-import { renderSymbol } from "./renderSymbol";
-
+import { renderChapterSymbol } from "./renderChapterSymbol";
+import { useFonts, Rye_400Regular } from "@expo-google-fonts/rye";
+import { useLayoutEffect } from "react";
+import { RootStackParamList } from "../../../types";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+// Smokum
 const chapters = [1, 2, 3, 4, 5, 6, "EP1", "EP2"];
-export const ChapterCard = () => {
+type ChapterCardNavigation = NativeStackNavigationProp<RootStackParamList, "Chapters">
+
+export const ChapterCard = ({navigation}: {navigation: ChapterCardNavigation}) => {
+
+  useLayoutEffect(() => {navigation.setOptions({headerShown: false})})
+  const [fontsLoaded] = useFonts({Rye_400Regular})
+    if (!fontsLoaded) {
+    return null; 
+  }
   const renderCard = (chapter: number | string) => {
+    
     return (
+      <Pressable onPress={() => navigation.navigate("Chapter", {chapter})}>
+
       <View style={styles.grid}>
         <ImageBackground
-          source={require("../../assets/Background CHAPTER.png")}
-          resizeMode="stretch"
-        >
+          source={require("../../../assets/chapter_grid_background.png")}
+          resizeMode="cover"
+          style={styles.bg}
+          >
           <View>
-            <Text> Chapter {chapter}</Text>
+            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]}>Chapter {chapter}</Text>
           </View>
           <View>
-            <Text>{renderSymbol(chapter)}</Text>
+            <Text style={styles.symbol}>{renderChapterSymbol(chapter)}</Text>
           </View>
         </ImageBackground>
       </View>
+    </Pressable>
     );
   };
   return (
@@ -34,6 +52,7 @@ export const ChapterCard = () => {
         data={chapters}
         keyExtractor={(item) => item.toString()}
         renderItem={({ item }) => renderCard(item)}
+        numColumns={2}
       />
     </>
   );
@@ -51,5 +70,21 @@ const styles = StyleSheet.create({
     shadowOffset: { width: -2, height: 2 },
     shadowRadius: 5,
     overflow: Platform.OS === "android" ? "hidden" : "visible",
+  },
+  header: {
+    textAlign: "center",
+    color: Colors.dark_dust_brown,
+    fontSize: 24,
+    paddingTop: 6,
+    paddingBottom: 24,
+  },
+  symbol: {
+    textAlign: "center",
+  },
+  bg: {
+    flex: 1,
+    justifyContent: "flex-start",
+    alignItems: "center",
+    padding: 12,
   },
 });

@@ -11,6 +11,7 @@ export const Colors = {
     dust_brown: "#c8b19d",
     dark_dust_brown: "#4b3d3a",
     brown: "#7d4c2c",
+    dark_brown: "#4C2B14",
     map: "#dec29e"
 
 }
