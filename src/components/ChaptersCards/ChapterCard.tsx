@@ -36,7 +36,7 @@ export const ChapterCard = ({navigation}: {navigation: ChapterCardNavigation}) =
           style={styles.bg}
           >
           <View>
-            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]}>Chapter {chapter}</Text>
+            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]} >Chapter {chapter}</Text>
           </View>
           <View>
             <Text style={styles.symbol}>{renderChapterSymbol(chapter)}</Text>
@@ -77,6 +77,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     paddingTop: 6,
     paddingBottom: 24,
+    flexShrink: 1,        
+  flexWrap: "wrap",     
+  maxWidth: "90%", 
   },
   symbol: {
     textAlign: "center",
