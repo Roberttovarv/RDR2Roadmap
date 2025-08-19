@@ -3,9 +3,13 @@ import { Mission } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
 import { RenderMissionSymbol } from "./RenderMissionSymbol";
+import Checkbox from "expo-checkbox";
+import { useState } from "react";
 
 export const renderItem = ({ item }: { item: Mission }) => {
   const { mission_es, mission_en, sym, deadline } = item;
+
+  const [checked, setChecked] = useState<boolean>(false)
 
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
 
@@ -19,6 +23,9 @@ export const renderItem = ({ item }: { item: Mission }) => {
       </View>
       <View style={styles.listSide}>
         <Text style={styles.text}>{deadline}</Text>
+      </View>
+      <View>
+        <Checkbox value={checked} onValueChange={setChecked} />
       </View>
     </View>
   );

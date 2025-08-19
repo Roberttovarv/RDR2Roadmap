@@ -1,72 +1,81 @@
+// ChapterCard.tsx
+import React, { useLayoutEffect, useState } from "react";
 import {
-  View,
-  Text,
-  FlatList,
-  StyleSheet,
-  Platform,
-  ImageBackground,
-  Pressable,
+  View, Text, FlatList, StyleSheet, Platform,
+  ImageBackground, Pressable, LayoutChangeEvent
 } from "react-native";
 import { Colors } from "../../../utils/colors";
 import { renderChapterSymbol } from "./renderChapterSymbol";
 import { useFonts, Rye_400Regular } from "@expo-google-fonts/rye";
-import { useLayoutEffect } from "react";
-import { RootStackParamList } from "../../../types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-// Smokum
+import { RootStackParamList } from "../../../types";
+
 const chapters = [1, 2, 3, 4, 5, 6, "EP1", "EP2"];
-type ChapterCardNavigation = NativeStackNavigationProp<RootStackParamList, "Chapters">
+type ChapterCardNavigation = NativeStackNavigationProp<RootStackParamList,"Chapters">;
 
-export const ChapterCard = ({navigation}: {navigation: ChapterCardNavigation}) => {
+const GAP = 16;         
+const HPAD = 16;         
 
-  useLayoutEffect(() => {navigation.setOptions({headerShown: false})})
-  const [fontsLoaded] = useFonts({Rye_400Regular})
-    if (!fontsLoaded) {
-    return null; 
-  }
+export const ChapterCard = ({ navigation }: { navigation: ChapterCardNavigation }) => {
+  useLayoutEffect(() => { navigation.setOptions({ headerShown: false }) }, [navigation]);
+
+  const [fontsLoaded] = useFonts({ Rye_400Regular });
+  const [containerWidth, setContainerWidth] = useState<number>(0);
+
+  const onLayout = (e: LayoutChangeEvent) => {
+    setContainerWidth(e.nativeEvent.layout.width);
+  };
+
+  if (!fontsLoaded) return null;
+
+  const ITEM_WIDTH = containerWidth > 0
+    ? (containerWidth - HPAD * 2 - GAP) / 2
+    : 0;
+
   const renderCard = (chapter: number | string) => {
-const title =
-  typeof chapter === "string" && chapter.startsWith("EP")
-    ? `Epilogue ${chapter.slice(2)}`
-    : `Chapter ${chapter}`;
-    return (
-      <Pressable onPress={() => navigation.navigate("Chapter", {chapter})}>
+    const title = typeof chapter === "string" && chapter.startsWith("EP")
+      ? `Epilogue ${chapter.slice(2)}`
+      : `Chapter ${chapter}`;
 
-      <View style={styles.grid}>
-        <ImageBackground
-          source={require("../../../assets/chapter_grid_background.png")}
-          resizeMode="cover"
-          style={styles.bg}
+    return (
+      <Pressable onPress={() => navigation.navigate("Chapter", { chapter })} style={{ width: ITEM_WIDTH }}>
+        <View style={[styles.grid, { width: ITEM_WIDTH }]}>
+          <ImageBackground
+            source={require("../../../assets/chapter_grid_background2.png")}
+            resizeMode="cover"
+            style={styles.bg}
           >
-          <View>
-            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]} >{title}</Text>
-          </View>
-          <View>
-            <Text style={styles.symbol}>{renderChapterSymbol(chapter)}</Text>
-          </View>
-        </ImageBackground>
-      </View>
-    </Pressable>
+            <View style={styles.containerWrapper}>
+
+            <View style={styles.symbol}>
+              <Text style={[styles.header, { fontFamily: "Rye_400Regular" }]}>{title}</Text>
+            </View>
+            <View style={styles.symbol}>
+              {renderChapterSymbol(chapter)}
+            </View>
+            </View>
+          </ImageBackground>
+        </View>
+      </Pressable>
     );
   };
+
   return (
-    <>
+    <View onLayout={onLayout} style={{ paddingHorizontal: HPAD, paddingVertical: GAP }}>
       <FlatList
         data={chapters}
         keyExtractor={(item) => item.toString()}
         renderItem={({ item }) => renderCard(item)}
         numColumns={2}
+        columnWrapperStyle={{ justifyContent: "space-between", marginBottom: GAP }}
       />
-    </>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   grid: {
-    flex: 1,
-    margin: 16,
     height: 200,
-    width: "auto",
     elevation: 4,
     shadowColor: Colors.brown,
     shadowOpacity: 0.35,
@@ -75,22 +84,21 @@ const styles = StyleSheet.create({
     overflow: Platform.OS === "android" ? "hidden" : "visible",
   },
   header: {
-    textAlign: "center",
-    color: Colors.dark_dust_brown,
+    color: Colors.dark_brown,
     fontSize: 20,
     paddingTop: 6,
     paddingBottom: 24,
-    flexShrink: 1,        
-  flexWrap: "wrap",     
-  maxWidth: "90%", 
   },
-  symbol: {
-    textAlign: "center",
-  },
+  symbol: { justifyContent: "center" },
   bg: {
     flex: 1,
+    width: "100%",      
     justifyContent: "flex-start",
     alignItems: "center",
-    padding: 12,
   },
+  containerWrapper: {
+    margin: 12,
+    justifyContent: "center",
+    alignItems: "center"
+  }
 });
