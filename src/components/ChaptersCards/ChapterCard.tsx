@@ -25,7 +25,10 @@ export const ChapterCard = ({navigation}: {navigation: ChapterCardNavigation}) =
     return null; 
   }
   const renderCard = (chapter: number | string) => {
-    
+const title =
+  typeof chapter === "string" && chapter.startsWith("EP")
+    ? `Epilogue ${chapter.slice(2)}`
+    : `Chapter ${chapter}`;
     return (
       <Pressable onPress={() => navigation.navigate("Chapter", {chapter})}>
 
@@ -36,7 +39,7 @@ export const ChapterCard = ({navigation}: {navigation: ChapterCardNavigation}) =
           style={styles.bg}
           >
           <View>
-            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]} >Chapter {chapter}</Text>
+            <Text style={[styles.header, {fontFamily: "Rye_400Regular"}]} >{title}</Text>
           </View>
           <View>
             <Text style={styles.symbol}>{renderChapterSymbol(chapter)}</Text>
@@ -74,7 +77,7 @@ const styles = StyleSheet.create({
   header: {
     textAlign: "center",
     color: Colors.dark_dust_brown,
-    fontSize: 24,
+    fontSize: 20,
     paddingTop: 6,
     paddingBottom: 24,
     flexShrink: 1,        
