@@ -4,7 +4,7 @@ import { Fontisto } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Text } from "react-native";
 
-export const RenderMissionSymbol = (sym: string) => {
+export const RenderMissionSymbol = ({sym}: {sym: string}) => {
   if (sym === "*") {
     return (
       <MaterialCommunityIcons name="cards-diamond" size={18} color="black" />

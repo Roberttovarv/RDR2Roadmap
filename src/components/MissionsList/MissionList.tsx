@@ -1,6 +1,6 @@
 import { FlatList } from "react-native";
 import missionsData from "../../../assets/db.json";
-import { renderItem } from "./components/renderItem";
+import { RenderChapterItem } from "./components/RenderChapterItem";
 import { Mission } from "../../../types";
 type Props = {
   chapter: number | string;
@@ -13,7 +13,7 @@ export const MissionList = ({ chapter }: Props) => {
     <FlatList
       data={missionsToRender as Mission[]}
       keyExtractor={(item) => item.ID.toString()}
-      renderItem={renderItem}
+      renderItem={({item}) => <RenderChapterItem item={item} />}
 
     />
   );

@@ -11,7 +11,6 @@ export const ChapterScreen = ({ route }: { route: ChapterRouteProp }) => {
   return (
     <>
       <View>
-        <Text>Chapter {chapter}</Text>
       </View>
       <MissionList chapter={chapter} />
     </>
