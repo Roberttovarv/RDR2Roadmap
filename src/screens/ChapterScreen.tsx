@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { MissionList } from "./missions list/MissionList";
+import { MissionList } from "../components/MissionsList/MissionList";
 import { RouteProp } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
 

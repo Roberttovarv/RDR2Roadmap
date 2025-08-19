@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { ChapterScreen } from "./ChapterScreen";
 import { RootStackParamList } from "../../types";
+import { MissionDetail } from "./MissionDetail";
 export const MainScreen = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>()
     return (
@@ -19,6 +20,7 @@ export const MainScreen = () => {
           <Stack.Navigator screenOptions={{contentStyle: {backgroundColor: "transparent"}}}>
             <Stack.Screen name="Chapters" component={ChapterCard} />
             <Stack.Screen name="Chapter" component={ChapterScreen}/>
+            <Stack.Screen name="MissionDetails" component={MissionDetail} />
           </Stack.Navigator>
           </NavigationContainer>
         </View>

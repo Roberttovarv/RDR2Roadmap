@@ -1,31 +1,31 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Pressable } from "react-native";
 import { Mission } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
 import { RenderMissionSymbol } from "./RenderMissionSymbol";
 import Checkbox from "expo-checkbox";
-import { useState } from "react";
 
 export const renderItem = ({ item }: { item: Mission }) => {
   const { mission_es, mission_en, sym, deadline } = item;
 
-  const [checked, setChecked] = useState<boolean>(false)
 
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
 
   return (
     <View style={styles.listContainer}>
       <View style={styles.listSide}>{RenderMissionSymbol(sym)}</View>
+      <Pressable>
       <View style={styles.listCenter}>
         <Text style={styles.text} numberOfLines={1} ellipsizeMode="tail">
           {title}
         </Text>
       </View>
+      </Pressable>
       <View style={styles.listSide}>
         <Text style={styles.text}>{deadline}</Text>
       </View>
-      <View>
-        <Checkbox value={checked} onValueChange={setChecked} />
+      <View style={styles.listSide}>
+        <Checkbox value={undefined} onValueChange={undefined} />
       </View>
     </View>
   );
