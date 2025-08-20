@@ -20,7 +20,7 @@ export const RenderChapterItem = ({ item }: { item: Mission }) => {
 
   return (
     <View style={styles.listContainer}>
-      <View style={styles.leftSide}>{<RenderMissionSymbol sym={sym} />}</View>
+      <View style={styles.leftSide}>{<RenderMissionSymbol sym={sym} size={18} />}</View>
       <Pressable
         onPress={() => navigation.navigate("MissionDetails", { mission: item })}
       >

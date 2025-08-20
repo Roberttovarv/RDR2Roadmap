@@ -12,7 +12,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -28,7 +29,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -44,7 +46,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -60,7 +63,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -76,7 +80,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -92,7 +97,8 @@
     "ending_at_es": "Colter",
     "chapter": 1,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -108,7 +114,8 @@
     "ending_at_es": "Sur de Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -124,7 +131,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -140,7 +148,8 @@
     "ending_at_es": "Van Horn",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -156,7 +165,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 2,
     "deadline": 6,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -172,7 +182,8 @@
     "ending_at_es": "Pantano de Bluewater",
     "chapter": 2,
     "deadline": null,
-    "notes": "Only appears after interacting with the Night Folk ",
+    "notes_en": "Only available after interacting with the Night Folk ",
+    "notes_es": "Solo disponible después de interacuar con el Night Folk",
     "completed": false
   },
   {
@@ -188,7 +199,8 @@
     "ending_at_es": "Brandywine Drop",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -204,7 +216,8 @@
     "ending_at_es": "New Hanover",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -220,7 +233,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -236,7 +250,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -252,7 +267,8 @@
     "ending_at_es": "Asiento de Calibán",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -268,7 +284,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -284,7 +301,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -300,7 +318,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -316,7 +335,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -332,7 +352,8 @@
     "ending_at_es": "Chez Porter",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -348,7 +369,8 @@
     "ending_at_es": "Cabaña de Six Point",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -364,7 +386,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -380,7 +403,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -396,7 +420,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -412,7 +437,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -428,7 +454,8 @@
     "ending_at_es": null,
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -444,7 +471,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -460,7 +488,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -476,7 +505,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -492,7 +522,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -508,7 +539,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -524,7 +556,8 @@
     "ending_at_es": "Heartlands",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -540,7 +573,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -556,7 +590,8 @@
     "ending_at_es": "Lone Mule Stead",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -572,7 +607,8 @@
     "ending_at_es": "Strawberry",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -588,7 +624,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -604,7 +641,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -620,7 +658,8 @@
     "ending_at_es": "Valentine Station",
     "chapter": 2,
     "deadline": 3,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -636,7 +675,8 @@
     "ending_at_es": "Rancho Emerald",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -652,7 +692,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -668,7 +709,8 @@
     "ending_at_es": "Old Trail Rise",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -684,7 +726,8 @@
     "ending_at_es": "Old Trail Rise",
     "chapter": 2,
     "deadline": null,
-    "notes": "Auto completes if ignored long-enough",
+    "notes_en": "Auto completes if ignored long-enough",
+    "notes_es": "Se autocompleta si la ignoras lo suficiente",
     "completed": false
   },
   {
@@ -700,7 +743,8 @@
     "ending_at_es": "Heartlands",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -716,7 +760,8 @@
     "ending_at_es": "Dakota River",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -732,7 +777,8 @@
     "ending_at_es": "Mirador de la Herradura",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -748,7 +794,8 @@
     "ending_at_es": "San Luis River",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -764,7 +811,8 @@
     "ending_at_es": "Valentine",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -780,7 +828,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 2,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -796,7 +845,8 @@
     "ending_at_es": "Rhodes",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -812,7 +862,8 @@
     "ending_at_es": "Oeste del Pantano de Bluewater",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -828,7 +879,8 @@
     "ending_at_es": "Lonnie's Shack",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -844,7 +896,8 @@
     "ending_at_es": "Radley's Pasture",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -860,7 +913,8 @@
     "ending_at_es": "Ringneck Creek",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -876,7 +930,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -892,7 +947,8 @@
     "ending_at_es": null,
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -908,7 +964,8 @@
     "ending_at_es": null,
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -924,7 +981,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -940,7 +998,8 @@
     "ending_at_es": "Rhodes",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -956,7 +1015,8 @@
     "ending_at_es": "Rhodes",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -972,7 +1032,8 @@
     "ending_at_es": "Caliga Hall",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -988,7 +1049,8 @@
     "ending_at_es": "Mansión Braithwaite",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1004,7 +1066,8 @@
     "ending_at_es": "Bolger Glade",
     "chapter": 3,
     "deadline": 4,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1020,7 +1083,8 @@
     "ending_at_es": "Clemens Clove",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1036,7 +1100,8 @@
     "ending_at_es": "Mansión Braithwaite",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1052,7 +1117,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1068,7 +1134,8 @@
     "ending_at_es": "Caliga Hall",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1084,7 +1151,8 @@
     "ending_at_es": "Rhodes",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1100,7 +1168,8 @@
     "ending_at_es": "Siltwater Strand",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1116,7 +1185,8 @@
     "ending_at_es": "Scarlett Meadows",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1132,7 +1202,8 @@
     "ending_at_es": "Eris Field",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1148,7 +1219,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1164,7 +1236,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1180,7 +1253,8 @@
     "ending_at_es": "Clemens Point",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1196,7 +1270,8 @@
     "ending_at_es": "Scarlett Meadows",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1212,7 +1287,8 @@
     "ending_at_es": "Mansión Braithwaite",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1228,7 +1304,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 3,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1244,7 +1321,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1260,7 +1338,8 @@
     "ending_at_es": "Valentine",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1276,7 +1355,8 @@
     "ending_at_es": "Sur de Rhodes",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1292,7 +1372,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1308,7 +1389,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1324,7 +1406,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1340,7 +1423,8 @@
     "ending_at_es": "Bayou Nwa",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1356,7 +1440,8 @@
     "ending_at_es": "Scarlett Meadows",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1372,7 +1457,8 @@
     "ending_at_es": "Shady Belle",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1388,7 +1474,8 @@
     "ending_at_es": null,
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1404,7 +1491,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1420,7 +1508,8 @@
     "ending_at_es": "Shady Belle",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1436,7 +1525,8 @@
     "ending_at_es": "Clemens Clove",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1452,7 +1542,8 @@
     "ending_at_es": "Rhodes",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1468,7 +1559,8 @@
     "ending_at_es": "Scarlett Meadows",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1484,7 +1576,8 @@
     "ending_at_es": "Scarlett Meadows",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1500,7 +1593,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1509,14 +1603,15 @@
     "has_progress": true,
     "given_by": "Brother Dorkins | Sister Calderón",
     "mission_en": "Brothers and Sisters, One and All ",
-    "mission_es": "Todos somos hermano",
+    "mission_es": "Todos somos hermanos",
     "starting_at_en": "Saint Denis",
     "ending_at_en": "Saint Denis",
     "starting_at_es": "Saint Denis",
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1532,7 +1627,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": 5,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1548,7 +1644,8 @@
     "ending_at_es": "Radley's House",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1564,7 +1661,8 @@
     "ending_at_es": "Shady Belle",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1580,7 +1678,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1596,7 +1695,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1612,7 +1712,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1628,7 +1729,8 @@
     "ending_at_es": "Shady Belle",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1644,7 +1746,8 @@
     "ending_at_es": "Bayou Nwa",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1660,7 +1763,8 @@
     "ending_at_es": "Lagras",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1676,7 +1780,8 @@
     "ending_at_es": "Shady Belle",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1692,7 +1797,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1708,7 +1814,8 @@
     "ending_at_es": "Twin Stack Pass",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1724,7 +1831,8 @@
     "ending_at_es": "Antenor commercial boat",
     "chapter": 4,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1740,7 +1848,8 @@
     "ending_at_es": "La Capilla",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1756,7 +1865,8 @@
     "ending_at_es": "La Capilla",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1772,7 +1882,8 @@
     "ending_at_es": "La Capilla",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1788,7 +1899,8 @@
     "ending_at_es": "Cinco Torres",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1804,7 +1916,8 @@
     "ending_at_es": "Mar Caribe",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1820,7 +1933,8 @@
     "ending_at_es": "Lakay",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1836,7 +1950,8 @@
     "ending_at_es": "Lakay",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1852,7 +1967,8 @@
     "ending_at_es": "Butcher Creek",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1868,7 +1984,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1884,7 +2001,8 @@
     "ending_at_es": "Beaver Hollow",
     "chapter": 5,
     "deadline": null,
-    "notes": "After this point Bounty Hunting is locked until Epilogue I",
+    "notes_en": "After this point Bounty Hunting is locked until Epilogue I",
+    "notes_es": "A partir de este puedo las misiones de cazarrecompensas estarán bloqueadas hasta el Epílogo I",
     "completed": false
   },
   {
@@ -1900,7 +2018,8 @@
     "ending_at_es": "Casa del Veterano",
     "chapter": 5,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1916,7 +2035,8 @@
     "ending_at_es": "Kamassa River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1932,7 +2052,8 @@
     "ending_at_es": "Beaver Hollow",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1948,7 +2069,8 @@
     "ending_at_es": "Kamassa River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -1964,7 +2086,8 @@
     "ending_at_es": "Annesburg",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
+    "notes_en": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
+    "notes_es": "Debe completarse antes de  \"Nuestra mejor versión\" | Solo disponible con humor alto",
     "completed": false
   },
   {
@@ -1980,7 +2103,8 @@
     "ending_at_es": "Annesburg",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
+    "notes_en": "Must be completed by \"Our Best Selves\" | Only available with High Honor",
+    "notes_es": "Debe completarse antes de  \"Nuestra mejor versión\" | Solo disponible con humor alto",
     "completed": false
   },
   {
@@ -1996,7 +2120,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"The Fine Art of Conversation\" | Only available if \"Brothers and Sisters, One and All\" is completed",
+    "notes_en": "Must be completed by \"The Fine Art of Conversation\" | Only available if \"Brothers and Sisters, One and All\" is completed",
+    "notes_es": "Debe completarse antes de \"El bello arte de la conversación\" | Solo disponible si \"Todos somos hermanos\" ha sido completada",
     "completed": false
   },
   {
@@ -2012,7 +2137,8 @@
     "ending_at_es": "Mansión Braithwaite",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Our Best Selves\" ",
+    "notes_en": "Must be completed by \"Our Best Selves\" ",
+    "notes_es": "Debe ser completada antes de \"Nuestra mejor versión\" ",
     "completed": false
   },
   {
@@ -2028,7 +2154,8 @@
     "ending_at_es": "Riggs Station",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Our Best Selves\" ",
+    "notes_en": "Must be completed by \"Our Best Selves\" ",
+    "notes_es": "Debe ser completada antes de \"Nuestra mejor versión\" ",
     "completed": false
   },
   {
@@ -2044,7 +2171,8 @@
     "ending_at_es": "Beaver Hollow",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"My Last Boy\" ",
+    "notes_en": "Must be completed by \"My Last Boy\" ",
+    "notes_es": "Debe ser completada antes de \"Mi último hijo\" ",
     "completed": false
   },
   {
@@ -2060,7 +2188,8 @@
     "ending_at_es": null,
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Money Lending and Other Sins VII\" ",
+    "notes_en": "Must be completed by \"Money Lending and Other Sins VII\" ",
+    "notes_es": "Debe ser completada antes de \"Prestar dinero y otros pecados VII\" ",
     "completed": false
   },
   {
@@ -2076,7 +2205,8 @@
     "ending_at_es": null,
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"Money Lending and Other Sins VII\" ",
+    "notes_en": "Must be completed by \"Money Lending and Other Sins VII\" ",
+    "notes_es": "Debe ser completada antes de \"Prestar dinero y otros pecados VII\" ",
     "completed": false
   },
   {
@@ -2092,7 +2222,8 @@
     "ending_at_es": "Beaver Hollow",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Must be completed by \"My Last Boy\" ",
+    "notes_en": "Must be completed by \"My Last Boy\" ",
+    "notes_es": "Debe ser completada antes de \"Mi último hijo\" ",
     "completed": false
   },
   {
@@ -2108,7 +2239,8 @@
     "ending_at_es": "Kamassa River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2124,7 +2256,8 @@
     "ending_at_es": "Bacchus Station",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2140,7 +2273,8 @@
     "ending_at_es": "Lannahechee River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2156,7 +2290,8 @@
     "ending_at_es": "O'Creagh's Run",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Only available if agreeing to help in \"A Rage Unleashed\"",
+    "notes_en": "Only available if agreeing to help in \"A Rage Unleashed\"",
+    "notes_es": "Solo disponible si accedes a ayudar en \"La furia desatada\"",
     "completed": false
   },
   {
@@ -2172,7 +2307,8 @@
     "ending_at_es": "Reserva India Wapiti",
     "chapter": 6,
     "deadline": "EP1",
-    "notes": "Only available if agreeing to help in \"Archeology for Beginners\"",
+    "notes_en": "Only available if agreeing to help in \"Archeology for Beginners\" ",
+    "notes_es": "Solo disponible si accedes a ayudar en \"Arqueología para principiantes\" ",
     "completed": false
   },
   {
@@ -2188,7 +2324,8 @@
     "ending_at_es": "Emerald Station",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2204,7 +2341,8 @@
     "ending_at_es": "Beaver Hollow",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2220,7 +2358,8 @@
     "ending_at_es": "Dakota River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2236,7 +2375,8 @@
     "ending_at_es": "Dakota River",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2252,7 +2392,8 @@
     "ending_at_es": "Hanging Dog Ranch",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2268,7 +2409,8 @@
     "ending_at_es": "Hanging Dog Ranch",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2284,7 +2426,8 @@
     "ending_at_es": "Willard Rest",
     "chapter": 6,
     "deadline": null,
-    "notes": "All encounters can only be seen by visiting 3 times before the end of the main story, and then visiting her once in the epilogue",
+    "notes_en": "All encounters can only be seen by visiting 3 times before the end of the main story, and then visiting her once in the epilogue",
+    "notes_es": "Todos los encuentros solo pueden verse visitándola 3 veces antes del final de la historia principal, y luego visitándola una vez en el epílogo.",
     "completed": false
   },
   {
@@ -2300,7 +2443,8 @@
     "ending_at_es": "Annesburg",
     "chapter": 6,
     "deadline": null,
-    "notes": " Starting here is the main story's conclusion |  You will not be able to play freely again until Epilogue I ",
+    "notes_en": "Starting here is the main story's conclusion | You will not be able to play freely again until Epilogue I ",
+    "notes_es": "Al comenzar esta misión concluímos con la historia principal | No podrás jugar libremente hasta el Epílogo I",
     "completed": false
   },
   {
@@ -2316,7 +2460,8 @@
     "ending_at_es": "Bacchus Station",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2332,7 +2477,8 @@
     "ending_at_es": "Grizzlies East",
     "chapter": 6,
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2348,7 +2494,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2364,7 +2511,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2380,7 +2528,8 @@
     "ending_at_es": "Tumbleweed",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2396,7 +2545,8 @@
     "ending_at_es": "Tumbleweed",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2412,7 +2562,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2428,7 +2579,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2444,7 +2596,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2460,7 +2613,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2476,7 +2630,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2492,7 +2647,8 @@
     "ending_at_es": "Pronghorn Ranch",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2508,7 +2664,8 @@
     "ending_at_es": "Big Valley",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2524,7 +2681,8 @@
     "ending_at_es": "Diablo Ridge",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2540,7 +2698,8 @@
     "ending_at_es": "Strawberry",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2556,7 +2715,8 @@
     "ending_at_es": "Saint Denis",
     "chapter": "EP1",
     "deadline": null,
-    "notes": "Only available if he is not killed earlier during the story",
+    "notes_en": "Only available if he is not killed earlier during the story",
+    "notes_es": "Solo disponible si no es asesinado antes durante la historia",
     "completed": false
   },
   {
@@ -2572,7 +2732,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2588,7 +2749,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2604,7 +2766,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2620,7 +2783,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2636,7 +2800,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2652,7 +2817,8 @@
     "ending_at_es": "Tanner's Reach",
     "chapter": "EP1",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2668,7 +2834,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2684,7 +2851,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2700,7 +2868,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2716,7 +2885,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2732,7 +2902,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2748,7 +2919,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2764,7 +2936,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2780,7 +2953,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2796,7 +2970,8 @@
     "ending_at_es": "Blackwater",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2812,7 +2987,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   },
   {
@@ -2828,7 +3004,8 @@
     "ending_at_es": "Beecher's Hope",
     "chapter": "EP2",
     "deadline": null,
-    "notes": null,
+    "notes_en": null,
+    "notes_es": null,
     "completed": false
   }
 ]
