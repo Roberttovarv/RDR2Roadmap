@@ -4,6 +4,7 @@ import {
   useFonts,
   EduNSWACTFoundation_400Regular,
 } from "@expo-google-fonts/edu-nsw-act-foundation";
+import { Colors } from "../../../utils/colors";
 
 export const RenderGivenBy = ({
   given_by,
@@ -32,11 +33,13 @@ const styles = StyleSheet.create({
     fontFamily: "EduNSWACTFoundation_400Regular",
     fontSize: 30,
     paddingHorizontal: 16,
+    color: Colors.darkest_brown
   },
   other_mission: {
     fontFamily: "EduNSWACTFoundation_600SemiBold",
     fontSize: 36,
     padding: 16,
     textAlign: "center",
+    color: Colors.darkest_brown
   },
 });

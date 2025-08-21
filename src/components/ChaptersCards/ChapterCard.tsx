@@ -41,7 +41,7 @@ export const ChapterCard = ({ navigation }: { navigation: ChapterCardNavigation 
       <Pressable onPress={() => navigation.navigate("Chapter", { chapter })} style={{ width: ITEM_WIDTH }}>
         <View style={[styles.grid, { width: ITEM_WIDTH }]}>
           <ImageBackground
-            source={require("../../../assets/chapter_grid_background2.png")}
+            source={require("../../../assets/chapter_grid_background2.webp")}
             resizeMode="cover"
             style={styles.bg}
           >

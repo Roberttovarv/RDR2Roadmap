@@ -10,7 +10,7 @@ export const MainScreen = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
   return (
     <ImageBackground
-      source={require("../../assets/bg_wood.png")}
+      source={require("../../assets/bg_wood2.webp")}
       style={{ flex: 1 }}
       resizeMode="cover"
     >

@@ -18,7 +18,7 @@ export const RenderChapterNumber = ({
   if (typeof chapter === "string")
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Chapter: Epilogue {parseInt(chapter[chapter.length -1]) > 1 ? "II" : "I"}</Text>
+        <Text style={styles.text}>Epilogue {parseInt(chapter[chapter.length -1]) > 1 ? "II" : "I"}</Text>
       </View>
     );
   return (

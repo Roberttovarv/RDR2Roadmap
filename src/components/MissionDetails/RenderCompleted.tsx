@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: "EduNSWACTFoundation_600SemiBold",
     fontSize: 24,
-    paddingHorizontal: 16,
+    paddingLeft: 16,
     paddingVertical: 6,
     color: Colors.dark_brown,
 

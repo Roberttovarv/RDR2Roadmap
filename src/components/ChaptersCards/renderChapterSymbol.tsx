@@ -31,6 +31,6 @@ export const renderChapterSymbol = (chapter: string | number) => {
 };
 
 const styles = {
-  color: Colors.dark_brown,
+  color: Colors.darkest_brown,
 
 }
