@@ -1,5 +1,4 @@
 import { Text, StyleSheet } from "react-native";
-import { DEVICE_LANGUAGE } from "../../../device";
 
 type Props = {
   notes_raw: string | null;
@@ -25,12 +24,12 @@ export const RenderNotes = ({notes_raw}: Props) => {
 const styles = StyleSheet.create({
   text: {
     fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 30,
+    fontSize: 24,
     paddingHorizontal: 16,
   },
   note: {
     fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 24,
+    fontSize: 22,
     paddingHorizontal: 32,
   },
 });

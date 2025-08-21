@@ -17,3 +17,15 @@ export const Colors = {
     brown_green: "#4c6444"
 
 }
+
+export const Opacity = {
+    1: "1A",
+    2: "33",
+    3: "4D",
+    4: "66",
+    5: "80",
+    6: "99",
+    7: "B3",
+    8: "CC",
+    9: "E6"
+}

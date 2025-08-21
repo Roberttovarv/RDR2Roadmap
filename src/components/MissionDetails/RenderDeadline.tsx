@@ -38,9 +38,10 @@ export const RenderDeadline = ({
 const styles = StyleSheet.create({
   text: {
     fontFamily: "EduNSWACTFoundation_600SemiBold",
-    fontSize: 24,
+    fontSize: 22,
     paddingHorizontal: 16,
     paddingVertical: 6,
-    color: Colors.red
+    color: Colors.red,
+    textAlign: "center"
   },
 });

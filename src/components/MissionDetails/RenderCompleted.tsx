@@ -12,7 +12,7 @@ export const RenderCompleted = ({ completed }: { completed: boolean }) => {
     });
     if (!fontsLoaded) return null 
 
-    const isCompleted = completed ? <Entypo name="check" size={32} color={Colors.brown_green} /> : <Entypo name="cross" size={32} color={Colors.dark_brown} />
+    const isCompleted = completed ? <Entypo name="check" size={28} color={Colors.brown_green} /> : <Entypo name="cross" size={32} color={Colors.dark_brown} />
 
     return <View style={styles.container}>
         <Text style={styles.text}>Completed:</Text>

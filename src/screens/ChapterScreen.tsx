@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { MissionList } from "../components/MissionsList/MissionList";
 import { RouteProp } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
@@ -10,9 +10,13 @@ export const ChapterScreen = ({ route }: { route: ChapterRouteProp }) => {
 
   return (
     <>
-      <View>
-      </View>
+      <View style={styles.root}>
       <MissionList chapter={chapter} />
+      </View>
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  root: {flex: 1}
+})

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   header: {
     fontFamily: "Rye_400Regular",
     fontSize: 32,
-    marginTop: 72,
+    marginTop: 60,
     textAlign: "center",
     padding: 16,
   },

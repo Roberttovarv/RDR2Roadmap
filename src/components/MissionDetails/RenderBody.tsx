@@ -17,7 +17,7 @@ export const RenderBody = ({mission} : {mission: Mission}) => {
   <View>
     <RenderGivenBy sym={mission.sym} given_by={mission.given_by} />
     <RenderLocation sym={mission.sym} start={start} end={end} />
-    <RenderDeadline deadline={mission.deadline} />
     <RenderNotes notes_raw={notes_raw} />
+    <RenderDeadline deadline={mission.deadline} />
   </View>
 );}
