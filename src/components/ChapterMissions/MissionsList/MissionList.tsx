@@ -1,7 +1,7 @@
 import { FlatList } from "react-native";
-import missionsData from "../../../assets/db.json";
+import missionsData from "../../../../assets/db.json";
 import { RenderChapterItem } from "./components/RenderChapterItem";
-import { Mission } from "../../../types";
+import { Mission } from "../../../../types";
 type Props = {
   chapter: number | string;
 };

@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { MissionList } from "../components/MissionsList/MissionList";
+import { MissionList } from "../components/ChapterMissions/MissionsList/MissionList";
 import { RouteProp } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
 

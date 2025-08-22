@@ -5,7 +5,6 @@ import {
   Ionicons,
 } from "@expo/vector-icons";
 import { Colors } from "../../../../utils/colors";
-import { Text } from "react-native";
 
 export const renderMissionTypeSymbol = (sym: string) => {
   if (sym === "*") {
@@ -36,8 +35,9 @@ export const renderMissionTypeSymbol = (sym: string) => {
     return (
       <FontAwesome5 name="question" size={styles.size} color={styles.color} />
     );
+  } else {
+    return <FontAwesome5 name="hat-cowboy-side" size={styles.size} color={styles.color} />;
   }
-  return <Text>{sym}</Text>;
 };
 
 const styles = {

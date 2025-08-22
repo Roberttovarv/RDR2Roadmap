@@ -4,7 +4,7 @@ import {
   FlatList,
   LayoutChangeEvent,
 } from "react-native";
-import { RenderSingleTypeCard } from "./RenderSingleTypeCard";
+import { RenderSingleTypeCard } from "./TypesCards/RenderSingleTypeCard";
 const symbols = ["*", "BOUNTY", "DEBT","GANG","?"];
 
 const GAP = 16;   

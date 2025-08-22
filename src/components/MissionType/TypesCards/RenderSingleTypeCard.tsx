@@ -6,31 +6,26 @@ import {
   Platform,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Colors } from "../../../utils/colors";
+import { Colors } from "../../../../utils/colors";
 import { useLayoutEffect } from "react";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RootStackParamList } from "../../../types";
-import { renderMissionTypeSymbol } from "./list/renderMissionTypeSymbol";
-import { renderMissionTypeTitle } from "./list/renderMissionTypeTitle";
+import { RootStackParamList } from "../../../../types";
+import { renderMissionTypeSymbol } from "./renderMissionTypeSymbol";
+import { renderMissionTypeTitle } from "./renderMissionTypeTitle";
 
-type ChapterCardNavigation = NativeStackNavigationProp<
-  RootStackParamList,
-  "Type"
->;
+type TypeCardNavigation = NativeStackNavigationProp<RootStackParamList, "Type">;
 
 type Props = {
   sym: string;
-  itemWidth: number; 
+  itemWidth: number;
 };
 
 export const RenderSingleTypeCard = ({ sym, itemWidth }: Props) => {
-    
-  const navigation = useNavigation<ChapterCardNavigation>();
+  const navigation = useNavigation<TypeCardNavigation>();
 
   useLayoutEffect(() => {
     navigation.setOptions({ headerShown: false });
   }, [navigation]);
-
 
   return (
     <Pressable
@@ -39,12 +34,14 @@ export const RenderSingleTypeCard = ({ sym, itemWidth }: Props) => {
     >
       <View style={[styles.grid, { width: itemWidth }]}>
         <ImageBackground
-          source={require("../../../assets/chapter_grid_background2.webp")}
+          source={require("../../../../assets/chapter_grid_background2.webp")}
           resizeMode="cover"
           style={styles.bg}
         >
-          <View style={styles.containerWrapper}>{renderMissionTypeTitle(sym)}</View>
-            <View style={styles.symbol}>{renderMissionTypeSymbol(sym)}</View>
+          <View style={styles.containerWrapper}>
+            {renderMissionTypeTitle(sym)}
+          </View>
+          <View style={styles.symbol}>{renderMissionTypeSymbol(sym)}</View>
         </ImageBackground>
       </View>
     </Pressable>
@@ -61,22 +58,22 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     overflow: Platform.OS === "android" ? "hidden" : "visible",
   },
-  header: {
-    color: Colors.dark_brown,
-    fontSize: 20,
-    paddingTop: 6,
-    paddingBottom: 24,
-    fontFamily: "Rye_400Regular"
-  },
-  symbol: { justifyContent: "center" },
   bg: {
     flex: 1,
     width: "100%",
-    justifyContent: "flex-start",
-    alignItems: "center",
+    position: "relative",
   },
   containerWrapper: {
     margin: 12,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  symbol: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     justifyContent: "center",
     alignItems: "center",
   },

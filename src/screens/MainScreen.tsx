@@ -1,4 +1,4 @@
-import {  View, StyleSheet, Image } from "react-native";
+import {  View, StyleSheet, } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { ChapterScreen } from "./ChapterScreen";

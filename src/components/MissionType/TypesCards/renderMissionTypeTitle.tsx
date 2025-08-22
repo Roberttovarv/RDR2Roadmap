@@ -15,8 +15,8 @@ export const renderMissionTypeTitle = (sym: string) => {
   if (sym === "BOUNTY") return <Text style={styles.header}>{BOUNTY}</Text>;
   if (sym === "DEBT") return <Text style={styles.header}>{DEBT}</Text>;
   if (sym === "GANG") return <Text style={styles.header}>{GANG}</Text>;
-  if (sym === "?") return <Text style={styles.header}>{EXT}</Text>;
-  return <Text style={styles.header}></Text>;
+  if (sym === "?"){ return <Text style={styles.header}>{EXT}</Text>;} else
+  {return <Text style={styles.header}>{MAIN}</Text>;}
 };
 
 const styles = StyleSheet.create({
@@ -26,5 +26,6 @@ const styles = StyleSheet.create({
     paddingTop: 6,
     paddingBottom: 24,
     fontFamily: "Rye_400Regular",
+    textAlign: "center"
   },
 });

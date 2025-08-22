@@ -1,5 +1,5 @@
 import { Colors } from "../../../utils/colors";
-import { RenderMissionSymbol } from "../MissionsList/components/RenderMissionSymbol";
+import { RenderMissionSymbol } from "../ChapterMissions/MissionsList/components/RenderMissionSymbol";
 import { StyleSheet, Text } from "react-native";
 
 const allowed = ["DEBT", "BOUNTY", "GANG", "?"];

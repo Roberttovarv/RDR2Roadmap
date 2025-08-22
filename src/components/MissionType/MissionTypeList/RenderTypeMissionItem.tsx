@@ -5,10 +5,9 @@ import {
   Pressable,
   ImageBackground,
 } from "react-native";
-import { Mission, RootStackParamList } from "../../../../types";
+import { RootStackParamList, Mission } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
-import { RenderMissionSymbol } from "./RenderMissionSymbol";
 import Checkbox from "expo-checkbox";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -20,9 +19,9 @@ type MissionDetailsNav = NativeStackNavigationProp<
 >;
 
 
-export const RenderChapterItem = ({ item }: { item: Mission }) => {
+export const RenderTypeMissionItem = ({ item }: { item: Mission }) => {
   
-  const { mission_es, mission_en, sym, deadline } = item;
+  const { mission_es, mission_en, sym, deadline, chapter } = item;
   const navigation = useNavigation<MissionDetailsNav>();
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
 
@@ -35,7 +34,7 @@ export const RenderChapterItem = ({ item }: { item: Mission }) => {
     >
       <View style={styles.listContainer}>
         <View style={styles.leftSide}>
-          <RenderMissionSymbol sym={sym} size={18} color={Colors.darkest_brown} />
+            <Text style={styles.chapter}>{chapter}</Text>
         </View>
 
         <Pressable
@@ -113,6 +112,14 @@ leftSide: {
     backgroundColor: "transparent",
     borderWidth: 3,
     borderRadius: 4,
-    marginLeft: 10, // reemplaza 'gap'
+    marginLeft: 10, 
+  },
+    chapter: {
+    fontSize: 16,
+    fontWeight: "800",
+    color: Colors.darkest_brown,
+    flexShrink: 1,
+    maxWidth: "100%",
+    textAlign: "left"
   },
 });

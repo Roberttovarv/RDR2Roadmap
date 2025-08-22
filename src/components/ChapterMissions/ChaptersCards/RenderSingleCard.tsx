@@ -7,11 +7,11 @@ import {
   Platform,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Colors } from "../../../utils/colors";
+import { Colors } from "../../../../utils/colors";
 import { renderChapterSymbol } from "./renderChapterSymbol";
 import { useLayoutEffect, useState } from "react";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RootStackParamList } from "../../../types";
+import { RootStackParamList } from "../../../../types";
 
 type ChapterCardNavigation = NativeStackNavigationProp<
   RootStackParamList,
@@ -40,11 +40,11 @@ export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
   return (
     <Pressable
       onPress={() => navigation.navigate("Chapter", { chapter })}
-      style={{ width: itemWidth }}
+      style={({pressed}) => [{ width: itemWidth }, pressed && styles.pressedStyle]}
     >
       <View style={[styles.grid, { width: itemWidth }]}>
         <ImageBackground
-          source={require("../../../assets/chapter_grid_background2.webp")}
+          source={require("../../../../assets/chapter_grid_background2.webp")}
           resizeMode="cover"
           style={styles.bg}
         >
@@ -91,4 +91,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  pressedStyle: {
+    elevation: 6,
+    shadowColor: Colors.darkest_brown,
+    shadowOffset: {width: -2, height: 2},
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    opacity: .5
+  }
 });

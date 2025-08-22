@@ -1,9 +1,10 @@
-import { Dimensions, Image, SafeAreaView, View, ScrollView } from "react-native";
-import { ChapterCard } from "../components/ChaptersCards/ChapterCard";
+import { Dimensions, Image, SafeAreaView, View  } from "react-native";
+import { ChapterCard } from "../components/ChapterMissions/ChaptersCards/ChapterCard";
 import { MissionTypeCard } from "../components/MissionType/MissionTypeCards";
 
 export const ChaptersGrid = () => {
   const { width } = Dimensions.get("window");
+
 
   return (
     <SafeAreaView style={{flex: 1}}>

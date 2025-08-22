@@ -1,7 +1,6 @@
 import { Text, StyleSheet, Pressable } from "react-native";
 import { Colors, Opacity } from "../../utils/colors";
 
-
 type Props = {
   onPress: () => void;
   text: string;

@@ -1,5 +1,5 @@
 import { Fontisto, MaterialCommunityIcons, FontAwesome6 } from "@expo/vector-icons";
-import { Colors } from "../../../utils/colors";
+import { Colors } from "../../../../utils/colors";
 
 export const renderChapterSymbol = (chapter: string | number) => {
   if (chapter === 1) {
