@@ -1,3 +1,4 @@
+import { Colors } from "../../../utils/colors";
 import { RenderMissionSymbol } from "../MissionsList/components/RenderMissionSymbol";
 import { StyleSheet, Text } from "react-native";
 
@@ -8,7 +9,7 @@ export const renderMissionDetailSymbol = (sym: string, size: number) => {
 
   return (
     <Text style={styles.symbol}>
-      <RenderMissionSymbol sym={sym} size={size} />
+      <RenderMissionSymbol sym={sym} size={size} color={Colors.darkest_brown}/>
     </Text>
   );
 };

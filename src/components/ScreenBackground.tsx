@@ -2,7 +2,7 @@ import { ImageBackground, View, StyleSheet } from "react-native";
 
 export const ScreenBackground = ({ children }: { children: React.ReactNode }) => (
   <ImageBackground
-    source={require("../../assets/bg_wood2.webp")}
+    source={require("../../assets/bg_wood.webp")}
     style={styles.bg}
     imageStyle={{ resizeMode: "cover" }}
     fadeDuration={0}

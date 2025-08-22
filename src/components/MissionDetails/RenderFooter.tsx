@@ -15,11 +15,11 @@ export const RenderFooter = ({ mission }: { mission: Mission }) => {
 
     if (!completed) {
         setTimeout(() => {
-                setButtonText("Mark as uncompleted");
+                setButtonText("Set as uncompleted");
       }, 100);
     } else {
         setTimeout(() => {
-          setButtonText("Mark as completed");
+          setButtonText("Set as completed");
       }, 100);
     }
   };

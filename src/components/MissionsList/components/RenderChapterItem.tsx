@@ -1,4 +1,10 @@
-import { Text, View, StyleSheet, Pressable } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Pressable,
+  ImageBackground,
+} from "react-native";
 import { Mission, RootStackParamList } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
@@ -12,77 +18,101 @@ type MissionDetailsNav = NativeStackNavigationProp<
   RootStackParamList,
   "MissionDetails"
 >;
+
+
 export const RenderChapterItem = ({ item }: { item: Mission }) => {
+  
   const { mission_es, mission_en, sym, deadline } = item;
   const navigation = useNavigation<MissionDetailsNav>();
-
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
 
   return (
-    <View style={styles.listContainer}>
-      <View style={styles.leftSide}>{<RenderMissionSymbol sym={sym} size={18} />}</View>
-      <Pressable
-        onPress={() => navigation.navigate("MissionDetails", { mission: item })}
-      >
-        <View style={styles.listCenter}>
-          <Text style={styles.text} numberOfLines={1} ellipsizeMode="tail">
-            {title}
-          </Text>
+    <ImageBackground
+      style={{ flex: 1, paddingVertical: 10 }}
+      source={require("../../../../assets/mission_list2.webp")}
+      resizeMode="stretch"
+      imageStyle={{ borderRadius: 6}}
+    >
+      <View style={styles.listContainer}>
+        <View style={styles.leftSide}>
+          <RenderMissionSymbol sym={sym} size={18} color={Colors.darkest_brown} />
         </View>
-      </Pressable>
-      <View style={styles.rightSide}>
-        <Text style={styles.text}>
-          {deadline && <MaterialIcons name="timer" size={18} color="black" />}
-        </Text>
-        <Checkbox
-          value={false}
-          onValueChange={() => {}}
-          color={Colors.dark_brown}
-          style={styles.checkBox}
-        />
+
+        <Pressable
+          style={styles.pressableCenter}
+          onPress={() => navigation.navigate("MissionDetails", { mission: item })}
+        >
+          <View style={styles.listCenter}>
+            <Text
+              style={styles.text}
+              ellipsizeMode="tail" 
+              numberOfLines={1}    
+            >
+              {title}
+            </Text>
+          </View>
+        </Pressable>
+
+        <View style={styles.rightSide}>
+          {Boolean(deadline) && (
+            <MaterialIcons
+              name="timer"
+              size={18}
+              color={Colors.darkest_brown}
+              style={{ marginRight: 10 }}
+            />
+          )}
+          <Checkbox
+            value={false}
+            onValueChange={() => {}}
+            color={Colors.darkest_brown}
+            style={styles.checkBox}
+          />
+        </View>
       </View>
-    </View>
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
   listContainer: {
     flexDirection: "row",
-    padding: 12,
-    backgroundColor: Colors.map,
     alignItems: "center",
-    margin: 4,
-    borderColor: Colors.dark_dust_brown,
-    borderWidth: 4,
-    borderRadius: 6,
+    paddingHorizontal: 16,
+    margin: 10,
   },
-  leftSide: {
-    flex: 1.25,
-    justifyContent: "flex-start",
-    alignItems: "center",
-    flexDirection: "row",
-  },
+leftSide: {
+  justifyContent: "flex-start", 
+  alignItems: "flex-start",     
+  flexDirection: "row",
+},
   rightSide: {
-    flex: 1.25,
     justifyContent: "flex-end",
     alignItems: "center",
     flexDirection: "row",
-    gap: 10,
   },
+  pressableCenter: {
+    flex: 1,
+    minWidth: 0, },
   listCenter: {
-    flex: 8,
+    flex: 1,
+    minWidth: 0,
+    overflow: "hidden", 
     justifyContent: "center",
-    alignItems: "center",
-    padding: 8,
+    paddingHorizontal: 8,
   },
   text: {
     fontSize: 16,
     fontWeight: "800",
+    color: Colors.darkest_brown,
+    flexShrink: 1,
+    maxWidth: "100%",
+    textAlign: "center"
   },
   checkBox: {
     backgroundColor: "transparent",
-    borderColor: "black",
-    borderWidth: 2,
+    borderWidth: 3,
     borderRadius: 4,
+    marginLeft: 10, // reemplaza 'gap'
   },
 });

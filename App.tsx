@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, StatusBar } from "react-native";
 import { MainScreen } from "./src/screens/MainScreen";
 import {
   useFonts,
@@ -7,6 +7,7 @@ import {
 } from "@expo-google-fonts/edu-nsw-act-foundation";
 import { Rye_400Regular } from "@expo-google-fonts/rye";
 import { Smokum_400Regular } from "@expo-google-fonts/smokum";
+import { Colors } from "./utils/colors";
 export default function App() {
   const [fontsLoaded] = useFonts({
     EduNSWACTFoundation_400Regular,
@@ -18,6 +19,7 @@ export default function App() {
   if (!fontsLoaded) return null;
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="light-content" animated={true} backgroundColor={Colors.darkest_brown}/>
       <MainScreen />
     </SafeAreaView>
   );
@@ -26,6 +28,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: Colors.darkest_brown,
   },
 });

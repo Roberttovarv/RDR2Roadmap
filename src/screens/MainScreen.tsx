@@ -1,16 +1,18 @@
-import { ImageBackground, View, StyleSheet } from "react-native";
-import { ChapterCard } from "./ChapterCard";
+import {  View, StyleSheet, Image } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { ChapterScreen } from "./ChapterScreen";
 import { RootStackParamList } from "../../types";
 import { MissionDetail } from "./MissionDetail";
 import { ScreenBackground } from "../components/ScreenBackground";
+import { ChaptersGrid } from "./ChaptersGrid";
+
 
 export const MainScreen = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
   return (
     <ScreenBackground>
+
       <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator
@@ -18,7 +20,7 @@ export const MainScreen = () => {
               contentStyle: { backgroundColor: "transparent" },
             }}
           >
-            <Stack.Screen name="Chapters" component={ChapterCard} />
+            <Stack.Screen name="Chapters" component={ChaptersGrid} />
             <Stack.Screen name="Chapter" component={ChapterScreen} />
             <Stack.Screen name="MissionDetails" component={MissionDetail} />
           </Stack.Navigator>

@@ -376,7 +376,7 @@
   {
     "ID": 23,
     "sym": "LS",
-    "has_progress": false,
+    "has_progress": true,
     "given_by": "Leopold Strauss",
     "mission_en": "Money Lending and Other Sins I",
     "mission_es": "Prestar dinero y otros pecados",
@@ -393,7 +393,7 @@
   {
     "ID": 24,
     "sym": "LS",
-    "has_progress": false,
+    "has_progress": true,
     "given_by": "Leopold Strauss",
     "mission_en": "Money Lending and Other Sins II",
     "mission_es": "Prestar dinero y otros pecados II",
@@ -2194,7 +2194,7 @@
   },
   {
     "ID": 130,
-    "sym": "DEBT ",
+    "sym": "DEBT",
     "has_progress": false,
     "given_by": "Debt Collection",
     "mission_en": "Debt Owed by Arthur Londonderry ",
