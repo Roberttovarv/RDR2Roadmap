@@ -1,5 +1,4 @@
 import {
-  Text,
   View,
   ImageBackground,
   StyleSheet,
@@ -8,22 +7,23 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Colors } from "../../../utils/colors";
-import { renderChapterSymbol } from "./renderChapterSymbol";
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect } from "react";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../../types";
+import { renderMissionTypeSymbol } from "./renderMissionTypeSymbol";
+import { renderMissionTypeTitle } from "./renderMissionTypeTitle";
 
 type ChapterCardNavigation = NativeStackNavigationProp<
   RootStackParamList,
-  "Chapters"
+  "Type"
 >;
 
 type Props = {
-  chapter: number | string;
+  sym: string;
   itemWidth: number; 
 };
 
-export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
+export const RenderSingleTypeCard = ({ sym, itemWidth }: Props) => {
     
   const navigation = useNavigation<ChapterCardNavigation>();
 
@@ -32,14 +32,9 @@ export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
   }, [navigation]);
 
 
-  const title =
-    typeof chapter === "string" && chapter.startsWith("EP")
-      ? `Epilogue ${chapter.slice(2)}`
-      : `Chapter ${chapter}`;
-
   return (
     <Pressable
-      onPress={() => navigation.navigate("Chapter", { chapter })}
+      onPress={() => navigation.navigate("Type", { sym })}
       style={{ width: itemWidth }}
     >
       <View style={[styles.grid, { width: itemWidth }]}>
@@ -48,14 +43,8 @@ export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
           resizeMode="cover"
           style={styles.bg}
         >
-          <View style={styles.containerWrapper}>
-            <View style={styles.symbol}>
-              <Text style={styles.header}>
-                {title}
-              </Text>
-            </View>
-            <View style={styles.symbol}>{renderChapterSymbol(chapter)}</View>
-          </View>
+          <View style={styles.containerWrapper}>{renderMissionTypeTitle(sym)}</View>
+            <View style={styles.symbol}>{renderMissionTypeSymbol(sym)}</View>
         </ImageBackground>
       </View>
     </Pressable>

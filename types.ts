@@ -20,4 +20,5 @@ export type RootStackParamList = {
   Chapters: undefined;
   Chapter: { chapter: number | string };
   MissionDetails: { mission: Mission };
+  Type: {sym: string}
 };

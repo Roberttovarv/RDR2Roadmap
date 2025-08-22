@@ -6,6 +6,7 @@ import { RootStackParamList } from "../../types";
 import { MissionDetail } from "./MissionDetail";
 import { ScreenBackground } from "../components/ScreenBackground";
 import { ChaptersGrid } from "./ChaptersGrid";
+import { MissionTypeScreen } from "./MissionTypeScreen";
 
 
 export const MainScreen = () => {
@@ -23,6 +24,7 @@ export const MainScreen = () => {
             <Stack.Screen name="Chapters" component={ChaptersGrid} />
             <Stack.Screen name="Chapter" component={ChapterScreen} />
             <Stack.Screen name="MissionDetails" component={MissionDetail} />
+            <Stack.Screen name="Type" component={MissionTypeScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </View>
