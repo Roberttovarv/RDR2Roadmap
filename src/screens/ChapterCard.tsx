@@ -1,14 +1,13 @@
-// ChapterCard.tsx
 import React, { useLayoutEffect, useState } from "react";
 import {
   View, Text, FlatList, StyleSheet, Platform,
   ImageBackground, Pressable, LayoutChangeEvent
 } from "react-native";
-import { Colors } from "../../../utils/colors";
-import { renderChapterSymbol } from "./renderChapterSymbol";
+import { Colors } from "../../utils/colors";
+import { renderChapterSymbol } from "../components/ChaptersCards/renderChapterSymbol";
 import { useFonts, Rye_400Regular } from "@expo-google-fonts/rye";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RootStackParamList } from "../../../types";
+import { RootStackParamList } from "../../types";
 
 const chapters = [1, 2, 3, 4, 5, 6, "EP1", "EP2"];
 type ChapterCardNavigation = NativeStackNavigationProp<RootStackParamList,"Chapters">;
@@ -41,7 +40,7 @@ export const ChapterCard = ({ navigation }: { navigation: ChapterCardNavigation 
       <Pressable onPress={() => navigation.navigate("Chapter", { chapter })} style={{ width: ITEM_WIDTH }}>
         <View style={[styles.grid, { width: ITEM_WIDTH }]}>
           <ImageBackground
-            source={require("../../../assets/chapter_grid_background2.webp")}
+            source={require("../../assets/chapter_grid_background2.webp")}
             resizeMode="cover"
             style={styles.bg}
           >

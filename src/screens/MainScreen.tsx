@@ -1,23 +1,21 @@
 import { ImageBackground, View, StyleSheet } from "react-native";
-import { Colors } from "../../utils/colors";
-import { ChapterCard } from "../components/ChaptersCards/ChapterCard";
+import { ChapterCard } from "./ChapterCard";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { ChapterScreen } from "./ChapterScreen";
 import { RootStackParamList } from "../../types";
 import { MissionDetail } from "./MissionDetail";
+import { ScreenBackground } from "../components/ScreenBackground";
+
 export const MainScreen = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
   return (
-    <ImageBackground
-      source={require("../../assets/bg_wood2.webp")}
-      style={{ flex: 1 }}
-      resizeMode="cover"
+    <ScreenBackground
     >
       <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator
-            screenOptions={{ contentStyle: { backgroundColor: "transparent" } }}
+            screenOptions={{  contentStyle: { backgroundColor: "transparent",}}}
           >
             <Stack.Screen name="Chapters" component={ChapterCard} />
             <Stack.Screen name="Chapter" component={ChapterScreen} />
@@ -25,7 +23,7 @@ export const MainScreen = () => {
           </Stack.Navigator>
         </NavigationContainer>
       </View>
-    </ImageBackground>
+    </ScreenBackground>
   );
 };
 const styles = StyleSheet.create({
