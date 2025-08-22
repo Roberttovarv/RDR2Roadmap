@@ -5,7 +5,6 @@ import {
 } from "react-native";
 import { Colors } from "../../utils/colors";
 import { renderChapterSymbol } from "../components/ChaptersCards/renderChapterSymbol";
-import { useFonts, Rye_400Regular } from "@expo-google-fonts/rye";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../types";
 
@@ -18,14 +17,12 @@ const HPAD = 16;
 export const ChapterCard = ({ navigation }: { navigation: ChapterCardNavigation }) => {
   useLayoutEffect(() => { navigation.setOptions({ headerShown: false }) }, [navigation]);
 
-  const [fontsLoaded] = useFonts({ Rye_400Regular });
   const [containerWidth, setContainerWidth] = useState<number>(0);
 
   const onLayout = (e: LayoutChangeEvent) => {
     setContainerWidth(e.nativeEvent.layout.width);
   };
 
-  if (!fontsLoaded) return null;
 
   const ITEM_WIDTH = containerWidth > 0
     ? (containerWidth - HPAD * 2 - GAP) / 2

@@ -1,16 +1,10 @@
 import { Entypo } from "@expo/vector-icons/";
 import { Text, StyleSheet, View } from "react-native";
-import {
-  useFonts,
-  EduNSWACTFoundation_600SemiBold,
-} from "@expo-google-fonts/edu-nsw-act-foundation";
+
 import { Colors } from "../../../utils/colors";
 
 export const RenderCompleted = ({ completed }: { completed: boolean }) => {
-    const [fontsLoaded] = useFonts({
-      EduNSWACTFoundation_600SemiBold,
-    });
-    if (!fontsLoaded) return null 
+
 
     const isCompleted = completed ? <Entypo name="check" size={28} color={Colors.brown_green} /> : <Entypo name="cross" size={32} color={Colors.dark_brown} />
 

@@ -1,9 +1,5 @@
 import { StyleSheet, Text } from "react-native";
-import {
-  EduNSWACTFoundation_600SemiBold,
-  useFonts,
-  EduNSWACTFoundation_400Regular,
-} from "@expo-google-fonts/edu-nsw-act-foundation";
+
 import { Colors } from "../../../utils/colors";
 
 export const RenderGivenBy = ({
@@ -15,11 +11,7 @@ export const RenderGivenBy = ({
 }) => {
   const symbols = ["DEBT", "BOUNTY", "GANG"];
 
-  const [fontsLoaded] = useFonts({
-    EduNSWACTFoundation_600SemiBold,
-    EduNSWACTFoundation_400Regular,
-  });
-  if (!fontsLoaded) return null;
+
 
   if (symbols.includes(sym))
     return <Text style={styles.other_mission}>{given_by}</Text>;

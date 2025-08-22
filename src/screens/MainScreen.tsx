@@ -10,12 +10,13 @@ import { ScreenBackground } from "../components/ScreenBackground";
 export const MainScreen = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
   return (
-    <ScreenBackground
-    >
+    <ScreenBackground>
       <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator
-            screenOptions={{  contentStyle: { backgroundColor: "transparent",}}}
+            screenOptions={{
+              contentStyle: { backgroundColor: "transparent" },
+            }}
           >
             <Stack.Screen name="Chapters" component={ChapterCard} />
             <Stack.Screen name="Chapter" component={ChapterScreen} />

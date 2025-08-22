@@ -1,8 +1,4 @@
 import { Text, StyleSheet, View } from "react-native";
-import {
-  useFonts,
-  EduNSWACTFoundation_600SemiBold,
-} from "@expo-google-fonts/edu-nsw-act-foundation";
 import { Colors } from "../../../utils/colors";
 
 export const RenderChapterNumber = ({
@@ -10,10 +6,7 @@ export const RenderChapterNumber = ({
 }: {
   chapter: string | number;
 }) => {
-  const [fontsLoaded] = useFonts({
-    EduNSWACTFoundation_600SemiBold,
-  });
-  if (!fontsLoaded) return null;
+
 
   if (typeof chapter === "string")
     return (

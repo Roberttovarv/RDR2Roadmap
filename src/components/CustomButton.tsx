@@ -1,9 +1,6 @@
 import { Text, StyleSheet, Pressable } from "react-native";
 import { Colors, Opacity } from "../../utils/colors";
-import {
-  useFonts,
-  EduNSWACTFoundation_600SemiBold,
-} from "@expo-google-fonts/edu-nsw-act-foundation";
+
 
 type Props = {
   onPress: () => void;
@@ -11,10 +8,7 @@ type Props = {
 };
 
 export const CustomButton = ({ onPress, text }: Props) => {
-  const [fontsLoaded] = useFonts({
-    EduNSWACTFoundation_600SemiBold,
-  });
-  if (!fontsLoaded) return null;
+
   return (
     <Pressable
       onPress={onPress}
