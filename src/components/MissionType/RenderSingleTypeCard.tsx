@@ -10,8 +10,8 @@ import { Colors } from "../../../utils/colors";
 import { useLayoutEffect } from "react";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../../types";
-import { renderMissionTypeSymbol } from "./renderMissionTypeSymbol";
-import { renderMissionTypeTitle } from "./renderMissionTypeTitle";
+import { renderMissionTypeSymbol } from "./list/renderMissionTypeSymbol";
+import { renderMissionTypeTitle } from "./list/renderMissionTypeTitle";
 
 type ChapterCardNavigation = NativeStackNavigationProp<
   RootStackParamList,

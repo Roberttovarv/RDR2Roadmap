@@ -1,22 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
-import { MissionList } from "../components/MissionsList/MissionList";
-import { RouteProp } from "@react-navigation/native";
+// MissionTypeScreen.tsx
+import { StyleSheet, View } from "react-native";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../types";
+import { TypeMissionList } from "../components/MissionType/TypeMissionList";
 
-type ChapterRouteProp = RouteProp<RootStackParamList, "Type">;
+type Props = NativeStackScreenProps<RootStackParamList, "Type">;
 
-export const MissionTypeScreen = ({ route }: { route: ChapterRouteProp }) => {
+export const MissionTypeScreen = ({ route }: Props) => {
   const { sym } = route.params;
 
   return (
-    <>
-      <View style={styles.root}>
-      <MissionList chapter={sym} />
-      </View>
-    </>
+    <View style={styles.root}>
+      <TypeMissionList sym={sym} />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  root: {flex: 1}
-})
+  root: { flex: 1 },
+});

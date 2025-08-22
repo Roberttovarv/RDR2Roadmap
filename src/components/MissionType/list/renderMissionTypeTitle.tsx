@@ -1,6 +1,6 @@
 import { StyleSheet, Text } from "react-native";
-import { Colors } from "../../../utils/colors";
-import { DEVICE_LANGUAGE } from "../../../device";
+import { Colors } from "../../../../utils/colors";
+import { DEVICE_LANGUAGE } from "../../../../device";
 
 const STORY = DEVICE_LANGUAGE === "es" ? "Historia" : "Story";
 const BOUNTY = DEVICE_LANGUAGE === "es" ? "Cazarrecompensas" : "Bounty";
