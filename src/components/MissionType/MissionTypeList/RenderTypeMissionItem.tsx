@@ -21,7 +21,7 @@ type MissionDetailsNav = NativeStackNavigationProp<
 
 export const RenderTypeMissionItem = ({ item }: { item: Mission }) => {
   
-  const { mission_es, mission_en, sym, deadline, chapter } = item;
+  const { mission_es, mission_en, has_progress, deadline, chapter } = item;
   const navigation = useNavigation<MissionDetailsNav>();
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
 
@@ -43,7 +43,7 @@ export const RenderTypeMissionItem = ({ item }: { item: Mission }) => {
         >
           <View style={styles.listCenter}>
             <Text
-              style={styles.text}
+              style={[styles.text, !has_progress && {color: Colors.red}]}
               ellipsizeMode="tail" 
               numberOfLines={1}    
             >

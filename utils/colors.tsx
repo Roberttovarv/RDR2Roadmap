@@ -14,6 +14,7 @@ export const Colors = {
     dark_brown: "#4C2B14",
     darkest_brown: "#29170A",
     map: "#dec29e",
+    dark_map: "#d6a660",
     brown_green: "#4c6444"
 
 }

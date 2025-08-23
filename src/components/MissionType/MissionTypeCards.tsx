@@ -5,7 +5,7 @@ import {
   LayoutChangeEvent,
 } from "react-native";
 import { RenderSingleTypeCard } from "./TypesCards/RenderSingleTypeCard";
-const symbols = ["*", "BOUNTY", "DEBT","GANG","?"];
+const symbols = ["*", "BOUNTY", "DEBT","GANG","?", "PEOPLE"];
 
 const GAP = 16;   
 const HPAD = 16;
