@@ -7,6 +7,7 @@ import { MissionDetail } from "./MissionDetail";
 import { ScreenBackground } from "../components/ScreenBackground";
 import { ChaptersGrid } from "./ChaptersGrid";
 import { MissionTypeScreen } from "./MissionTypeScreen";
+import { Colors } from "../../utils/colors";
 
 
 export const MainScreen = () => {
@@ -19,7 +20,15 @@ export const MainScreen = () => {
           <Stack.Navigator
             screenOptions={{
               contentStyle: { backgroundColor: "transparent" },
+              headerStyle: {backgroundColor: Colors.darkest_brown},
+              headerTintColor: Colors.map,
+              headerTitleStyle: {
+                fontFamily: "Rye_400Regular",
+                fontSize: 20
+              },
+              headerTitleAlign: "center"
             }}
+
           >
             <Stack.Screen name="Chapters" component={ChaptersGrid} />
             <Stack.Screen name="Chapter" component={ChapterScreen} />
