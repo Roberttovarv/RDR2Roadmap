@@ -8,7 +8,7 @@ const DEBT = DEVICE_LANGUAGE === "es" ? "Deudas" : "Debt Collection";
 const GANG =
   DEVICE_LANGUAGE === "es" ? "Actividades de la banda" : "Gang Activities";
 const EXT = DEVICE_LANGUAGE === "es" ? "Extraños" : "Strangers";
-const MAIN = DEVICE_LANGUAGE === "es" ? "Principales" : "Main Missions";
+const MAIN = DEVICE_LANGUAGE === "es" ? "Personas" : "People";
 
 export const renderMissionTypeTitle = (sym: string) => {
   if (sym === "*") return <Text style={styles.header}>{STORY}</Text>;

@@ -30,7 +30,7 @@ export const RenderSingleTypeCard = ({ sym, itemWidth }: Props) => {
   return (
     <Pressable
       onPress={() => navigation.navigate("Type", { sym })}
-      style={{ width: itemWidth }}
+      style={({pressed}) => [{ width: itemWidth }, pressed && styles.pressedStyle]}
     >
       <View style={[styles.grid, { width: itemWidth }]}>
         <ImageBackground
@@ -70,11 +70,18 @@ const styles = StyleSheet.create({
   },
   symbol: {
     position: "absolute",
-    top: 0,
+    top: 15,
     left: 0,
     right: 0,
     bottom: 0,
     justifyContent: "center",
     alignItems: "center",
+  },  pressedStyle: {
+    elevation: 6,
+    shadowColor: Colors.darkest_brown,
+    shadowOffset: {width: -2, height: 2},
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    opacity: .5
   },
 });

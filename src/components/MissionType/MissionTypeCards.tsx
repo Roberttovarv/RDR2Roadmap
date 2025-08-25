@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import {
-  View,
-  FlatList,
-  LayoutChangeEvent,
-} from "react-native";
+import { View, FlatList, LayoutChangeEvent } from "react-native";
 import { RenderSingleTypeCard } from "./TypesCards/RenderSingleTypeCard";
-const symbols = ["*", "BOUNTY", "DEBT","GANG","?", "PEOPLE"];
+const symbols = ["*", "BOUNTY", "DEBT", "GANG", "?", "PEOPLE"];
 
-const GAP = 16;   
+const GAP = 16;
 const HPAD = 16;
 
-
-export const MissionTypeCard = () => {
-
+export const MissionTypeCard = ({
+  ListHeaderComponent,
+}: {
+  ListHeaderComponent: React.ReactElement;
+}) => {
   const onLayout = (e: LayoutChangeEvent) => {
     setContainerWidth(e.nativeEvent.layout.width);
   };
@@ -23,25 +21,29 @@ export const MissionTypeCard = () => {
     containerWidth > 0 ? (containerWidth - HPAD * 2 - GAP) / 2 : 0;
 
   return (
-    <View
-      onLayout={onLayout}
-      style={{ flex: 1}}
-    >
+    <View onLayout={onLayout} style={{ flex: 1 }}>
       <FlatList
         data={symbols}
         keyExtractor={(item) => item.toString()}
-        renderItem={({ item }) => (<RenderSingleTypeCard sym={item} itemWidth={ITEM_WIDTH}/>)}
+        renderItem={({ item }) => (
+          <RenderSingleTypeCard sym={item} itemWidth={ITEM_WIDTH} />
+        )}
         numColumns={2}
         columnWrapperStyle={{
           justifyContent: "space-between",
           marginBottom: GAP,
         }}
+        ListHeaderComponent={ListHeaderComponent}
         contentContainerStyle={{
           paddingHorizontal: HPAD,
           paddingVertical: GAP,
+        }}
+        ListHeaderComponentStyle={{
+          marginHorizontal: -HPAD,
+          marginTop: -GAP, 
+          marginBottom: GAP, 
         }}
       />
     </View>
   );
 };
-

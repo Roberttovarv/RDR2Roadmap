@@ -5,7 +5,7 @@ import { ChapterScreen } from "./ChapterScreen";
 import { RootStackParamList } from "../../types";
 import { MissionDetail } from "./MissionDetail";
 import { ScreenBackground } from "../components/ScreenBackground";
-import { ChaptersGrid } from "./ChaptersGrid";
+import { ChaptersGrid } from "./MissionsGrid";
 import { MissionTypeScreen } from "./MissionTypeScreen";
 import { Colors } from "../../utils/colors";
 

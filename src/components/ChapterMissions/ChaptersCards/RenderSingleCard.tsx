@@ -72,13 +72,6 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     overflow: Platform.OS === "android" ? "hidden" : "visible",
   },
-  header: {
-    color: Colors.dark_brown,
-    fontSize: 20,
-    paddingTop: 6,
-    paddingBottom: 24,
-    fontFamily: "Rye_400Regular"
-  },
   symbol: { justifyContent: "center" },
   bg: {
     flex: 1,
@@ -98,5 +91,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 3,
     opacity: .5
-  }
+  },
+  header: {
+    color: Colors.dark_brown,
+    fontSize: 20,
+    paddingTop: 6,
+    paddingBottom: 24,
+    fontFamily: "Rye_400Regular"
+  },
 });
