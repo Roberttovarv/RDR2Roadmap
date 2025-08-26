@@ -25,7 +25,7 @@ export const RenderDeadline = ({
 
   if (deadline === "EP1") return <Text style={styles.text}>{EP1_LINE}</Text>;
   if (deadline === "EP2") return <Text style={styles.text}>{EP2_LINE}</Text>;
-  return <Text style={styles.text}>{CHAP_LINE}</Text>;
+  if (deadline) return <Text style={styles.text}>{CHAP_LINE}</Text>;
 };
 
 const styles = StyleSheet.create({

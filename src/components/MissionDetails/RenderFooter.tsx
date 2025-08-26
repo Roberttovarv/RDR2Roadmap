@@ -4,37 +4,43 @@ import { RenderChapterNumber } from "./RenderChapterNumber";
 import { Colors } from "../../../utils/colors";
 import { Mission } from "../../../types";
 import { CustomButton } from "../CustomButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getAllMissions, toggleCompleted } from "../../storage/missions";
 
 export const RenderFooter = ({ mission }: { mission: Mission }) => {
-  const [completed, setCompleted] = useState(false);
-  
-  const [buttonText, setButtonText] = useState("Set as completed")
-  const handlePress = () => {
-    setCompleted(prev => !prev);
+  const [completed, setCompleted] = useState<boolean>(mission.completed);
+  const [buttonText, setButtonText] = useState<string>(
+    mission.completed ? "Set as uncompleted" : "Set as completed"
+  );
 
-    if (!completed) {
-        setTimeout(() => {
-                setButtonText("Set as uncompleted");
-      }, 100);
-    } else {
-        setTimeout(() => {
-          setButtonText("Set as completed");
-      }, 100);
+  const handlePress = async () => {
+    const next = !completed;
+    setCompleted(next);
+    setTimeout(()=>{
+
+      setButtonText(next ? "Set as uncompleted" : "Set as completed");
+    },100)
+
+    try {
+      await toggleCompleted(mission.ID, next);
+    } catch (e) {
+      setCompleted(!next);
+        setTimeout(()=>{
+      
+          setButtonText(!next ? "Set as uncompleted" : "Set as completed");
+    },100)
+      console.error("Error toggling mission:", e);
     }
-  };
+  }
   return (
     <View style={styles.container}>
       <View style={styles.data}>
-        <RenderCompleted completed={mission.completed} />
+        <RenderCompleted completed={completed} />
         <View style={styles.middleLine} />
         <RenderChapterNumber chapter={mission.chapter} />
       </View>
       <View>
-        <CustomButton
-          onPress={handlePress}
-          text={buttonText}
-        />
+        <CustomButton onPress={handlePress} text={buttonText} />
       </View>
     </View>
   );

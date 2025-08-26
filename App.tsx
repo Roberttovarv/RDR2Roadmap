@@ -8,6 +8,8 @@ import {
 import { Rye_400Regular } from "@expo-google-fonts/rye";
 import { Smokum_400Regular } from "@expo-google-fonts/smokum";
 import { Colors } from "./utils/colors";
+import { useEffect } from "react";
+import { initMissions } from "./src/storage/missions";
 export default function App() {
   const [fontsLoaded] = useFonts({
     EduNSWACTFoundation_400Regular,
@@ -15,11 +17,17 @@ export default function App() {
     EduNSWACTFoundation_600SemiBold,
     Smokum_400Regular,
   });
-
+  useEffect(() => {
+    initMissions()
+  }, []);
   if (!fontsLoaded) return null;
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" animated={true} backgroundColor={Colors.darkest_brown}/>
+      <StatusBar
+        barStyle="light-content"
+        animated={true}
+        backgroundColor={Colors.darkest_brown}
+      />
       <MainScreen />
     </SafeAreaView>
   );

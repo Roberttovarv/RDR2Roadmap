@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, FlatList, LayoutChangeEvent } from "react-native";
 import { RenderSingleTypeCard } from "./TypesCards/RenderSingleTypeCard";
-const symbols = ["*", "BOUNTY", "DEBT", "GANG", "?", "PEOPLE"];
+const symbols = ["*", "BOUNTY", "DEBT", "GANG", "?", "FRIENDS"];
 
 const GAP = 16;
 const HPAD = 16;

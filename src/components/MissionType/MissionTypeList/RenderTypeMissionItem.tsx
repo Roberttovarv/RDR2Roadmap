@@ -12,40 +12,56 @@ import Checkbox from "expo-checkbox";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { MaterialIcons } from "@expo/vector-icons";
+import { CustomCheckbox } from "../../CustomCheckbox";
 
 type MissionDetailsNav = NativeStackNavigationProp<
   RootStackParamList,
   "MissionDetails"
 >;
 
-
-export const RenderTypeMissionItem = ({ item }: { item: Mission }) => {
-  
-  const { mission_es, mission_en, has_progress, deadline, chapter } = item;
+export const RenderTypeMissionItem = ({
+  item,
+  onToggleCompleted,
+}: {
+  item: Mission;
+  onToggleCompleted: (id: number, value: boolean) => void;
+}) => {
+  const {
+    mission_es,
+    mission_en,
+    has_progress,
+    deadline,
+    chapter,
+    completed,
+    ID,
+  } = item;
   const navigation = useNavigation<MissionDetailsNav>();
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
+  const textStyle = !has_progress ? styles.textSecondary : styles.text;
 
   return (
     <ImageBackground
       style={{ flex: 1, paddingVertical: 10 }}
       source={require("../../../../assets/mission_list2.webp")}
       resizeMode="stretch"
-      imageStyle={{ borderRadius: 6}}
+      imageStyle={{ borderRadius: 6 }}
     >
       <View style={styles.listContainer}>
         <View style={styles.leftSide}>
-            <Text style={styles.chapter}>{chapter}</Text>
+          <Text style={styles.chapter}>{chapter}</Text>
         </View>
 
         <Pressable
           style={styles.pressableCenter}
-          onPress={() => navigation.navigate("MissionDetails", { mission: item })}
+          onPress={() =>
+            navigation.navigate("MissionDetails", { mission: item })
+          }
         >
           <View style={styles.listCenter}>
             <Text
-              style={[styles.text, !has_progress && {color: Colors.red}]}
-              ellipsizeMode="tail" 
-              numberOfLines={1}    
+              style={[textStyle, completed && styles.completed]}
+              ellipsizeMode="tail"
+              numberOfLines={1}
             >
               {title}
             </Text>
@@ -61,11 +77,9 @@ export const RenderTypeMissionItem = ({ item }: { item: Mission }) => {
               style={{ marginRight: 10 }}
             />
           )}
-          <Checkbox
-            value={false}
-            onValueChange={() => {}}
-            color={Colors.darkest_brown}
-            style={styles.checkBox}
+          <CustomCheckbox
+            value={completed}
+            onChange={(v) => onToggleCompleted(ID, v)}
           />
         </View>
       </View>
@@ -80,11 +94,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     margin: 10,
   },
-leftSide: {
-  justifyContent: "flex-start", 
-  alignItems: "flex-start",     
-  flexDirection: "row",
-},
+  leftSide: {
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    flexDirection: "row",
+  },
   rightSide: {
     justifyContent: "flex-end",
     alignItems: "center",
@@ -92,11 +106,12 @@ leftSide: {
   },
   pressableCenter: {
     flex: 1,
-    minWidth: 0, },
+    minWidth: 0,
+  },
   listCenter: {
     flex: 1,
     minWidth: 0,
-    overflow: "hidden", 
+    overflow: "hidden",
     justifyContent: "center",
     paddingHorizontal: 8,
   },
@@ -106,20 +121,32 @@ leftSide: {
     color: Colors.darkest_brown,
     flexShrink: 1,
     maxWidth: "100%",
-    textAlign: "center"
+    textAlign: "center",
   },
   checkBox: {
     backgroundColor: "transparent",
     borderWidth: 3,
     borderRadius: 4,
-    marginLeft: 10, 
+    marginLeft: 10,
   },
-    chapter: {
+  chapter: {
     fontSize: 16,
     fontWeight: "800",
     color: Colors.darkest_brown,
     flexShrink: 1,
     maxWidth: "100%",
-    textAlign: "left"
+    textAlign: "left",
+  },
+  textSecondary: {
+    fontSize: 16,
+    fontWeight: "800",
+    color: Colors.burdeos,
+    flexShrink: 1,
+    maxWidth: "100%",
+    textAlign: "center",
+  },
+  completed: {
+    opacity: 0.7,
+    textDecorationLine: "line-through",
   },
 });
