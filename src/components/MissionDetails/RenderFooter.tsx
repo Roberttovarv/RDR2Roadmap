@@ -15,8 +15,8 @@ export const RenderFooter = ({ mission }: { mission: Mission }) => {
 
   const handlePress = async () => {
     const next = !completed;
-    setCompleted(next);
     setTimeout(()=>{
+      setCompleted(next);
 
       setButtonText(next ? "Set as uncompleted" : "Set as completed");
     },100)
@@ -24,8 +24,8 @@ export const RenderFooter = ({ mission }: { mission: Mission }) => {
     try {
       await toggleCompleted(mission.ID, next);
     } catch (e) {
-      setCompleted(!next);
-        setTimeout(()=>{
+      setTimeout(()=>{
+          setCompleted(!next);
       
           setButtonText(!next ? "Set as uncompleted" : "Set as completed");
     },100)

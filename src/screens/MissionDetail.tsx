@@ -1,15 +1,22 @@
-import { ImageBackground, Text, View, StyleSheet } from "react-native";
-import { useRoute, RouteProp } from "@react-navigation/native";
+import { ImageBackground, View, StyleSheet } from "react-native";
+import { useRoute, RouteProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
 import { DEVICE_LANGUAGE } from "../../device";
 import { RenderHeader } from "../components/MissionDetails/RenderHeader";
 import { RenderBody } from "../components/MissionDetails/RenderBody";
 import { RenderFooter } from "../components/MissionDetails/RenderFooter";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useLayoutEffect } from "react";
 
 type MissionDetailsRoute = RouteProp<RootStackParamList, "MissionDetails">;
+type Nav = NativeStackNavigationProp<RootStackParamList, "MissionDetails">;
 
 export const MissionDetail = () => {
+  const navigation = useNavigation<Nav>()
 
+  useLayoutEffect(()=> {
+    navigation.setOptions({title: "Details"})
+  })
   const { params } = useRoute<MissionDetailsRoute>();
   const { mission } = params;
   const {

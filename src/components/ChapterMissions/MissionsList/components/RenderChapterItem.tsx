@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import { Mission, RootStackParamList } from "../../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../../device";
-import { Colors } from "../../../../../utils/colors";
+import { Colors, Opacity } from "../../../../../utils/colors";
 import { RenderMissionSymbol } from "./RenderMissionSymbol";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -26,10 +26,11 @@ export const RenderChapterItem = ({
   item: Mission;
   onToggleCompleted: (id: number, value: boolean) => void;
 }) => {
-  const { mission_es, mission_en, sym, deadline, completed, has_progress, ID } = item;
+  const { mission_es, mission_en, sym, deadline, completed, has_progress, ID } =
+    item;
   const navigation = useNavigation<MissionDetailsNav>();
   const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
-  const textStyle = !has_progress ? styles.textSecondary : styles.text
+  const textStyle = !has_progress ? styles.textSecondary : styles.text;
   return (
     <ImageBackground
       style={{ flex: 1, paddingVertical: 10 }}
@@ -47,13 +48,20 @@ export const RenderChapterItem = ({
         </View>
 
         <Pressable
-          style={styles.pressableCenter}
+          style={({ pressed }) => [
+            styles.pressableCenter,
+            pressed && { opacity: 0.5 },
+          ]}
           onPress={() =>
             navigation.navigate("MissionDetails", { mission: item })
           }
         >
           <View style={styles.listCenter}>
-            <Text style={[textStyle, completed && styles.completed]} ellipsizeMode="tail" numberOfLines={1}>
+            <Text
+              style={[textStyle, completed && styles.completed]}
+              ellipsizeMode="tail"
+              numberOfLines={1}
+            >
               {title}
             </Text>
           </View>
@@ -114,7 +122,7 @@ const styles = StyleSheet.create({
     maxWidth: "100%",
     textAlign: "center",
   },
-    textSecondary: {
+  textSecondary: {
     fontSize: 16,
     fontWeight: "800",
     color: Colors.burdeos,
@@ -123,7 +131,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   completed: {
-    opacity: .7,
-    textDecorationLine: "line-through"
-  }
+    opacity: 0.7,
+    textDecorationLine: "line-through",
+  },
 });

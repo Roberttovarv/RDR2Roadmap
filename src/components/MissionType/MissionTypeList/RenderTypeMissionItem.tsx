@@ -8,7 +8,6 @@ import {
 import { RootStackParamList, Mission } from "../../../../types";
 import { DEVICE_LANGUAGE } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
-import Checkbox from "expo-checkbox";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -52,7 +51,10 @@ export const RenderTypeMissionItem = ({
         </View>
 
         <Pressable
-          style={styles.pressableCenter}
+          style={({ pressed }) => [
+            styles.pressableCenter,
+            pressed && { opacity: 0.5 },
+          ]}
           onPress={() =>
             navigation.navigate("MissionDetails", { mission: item })
           }

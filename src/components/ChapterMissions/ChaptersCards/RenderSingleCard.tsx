@@ -31,11 +31,11 @@ export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
     navigation.setOptions({ headerShown: false });
   }, [navigation]);
 
-
+  const ROMAN: Record<number, string> = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI"}
   const title =
     typeof chapter === "string" && chapter.startsWith("EP")
-      ? `Epilogue ${chapter.slice(2)}`
-      : `Chapter ${chapter}`;
+      ? `Epilogue ${ROMAN[Number(String(chapter.slice(2)))]}`
+      : `Chapter ${ROMAN[Number(String(chapter))]}`;
 
   return (
     <Pressable

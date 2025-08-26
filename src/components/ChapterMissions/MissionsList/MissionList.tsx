@@ -1,11 +1,18 @@
 import { FlatList, Image } from "react-native";
 import { RenderChapterItem } from "./components/RenderChapterItem";
 import { Mission } from "../../../../types";
-import { useCallback, useEffect, useState } from "react";
-import { getMissionsByChapter, toggleCompleted } from "../../../storage/missions";
+import { useCallback, useEffect, useLayoutEffect, useState } from "react";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../../../../types";
+import {
+  getMissionsByChapter,
+  toggleCompleted,
+} from "../../../storage/missions";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 type Props = {
   chapter: number | string;
 };
+type Nav = NativeStackNavigationProp<RootStackParamList, "Chapter">;
 
 const chapterImages: Record<string, any> = {
   "1": require("../../../../assets/grids-template/chapter/1.webp"),
@@ -20,25 +27,42 @@ const chapterImages: Record<string, any> = {
 
 export const MissionList = ({ chapter }: Props) => {
   const [missions, setMissions] = useState<Mission[]>([]);
+  const navigation = useNavigation<Nav>()
+  const ROMAN: Record<number, string> = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI"}
 
-  useEffect(() => {
-    (async () => {
-      const data = await getMissionsByChapter(chapter);
-      setMissions(data);
-    })();
-  }, [chapter]);
 
-  const onToggleCompleted = useCallback(async (id: number, value: boolean)=> {
-    const nextAll = await toggleCompleted(id, value)
-    setMissions(nextAll.filter(mission => String(mission.chapter) === String(chapter)))
-  },[chapter])
+  const load = async () => {
+    const data = await getMissionsByChapter(chapter);
+    setMissions(data);
+  };
+  useEffect(() => { load() }, [chapter]);
+  useLayoutEffect(()=> {
+    const title =
+      typeof chapter === "string" && chapter.startsWith("EP")
+        ? `Epilogue ${ROMAN[Number(String(chapter.slice(2)))]}`
+      : `Chapter ${ROMAN[Number(String(chapter))]}`;
+    navigation.setOptions({ title });
+  }, [navigation, chapter]);
+  useFocusEffect(useCallback(() => {load()}, [chapter]))
+
+  const onToggleCompleted = useCallback(
+    async (id: number, value: boolean) => {
+      const nextAll = await toggleCompleted(id, value);
+      setMissions(
+        nextAll.filter((mission) => String(mission.chapter) === String(chapter))
+      );
+    },
+    [chapter]
+  );
 
   const headerSource = chapterImages[String(chapter)];
   return (
     <FlatList
       data={missions as Mission[]}
       keyExtractor={(item) => item.ID.toString()}
-      renderItem={({ item }) => <RenderChapterItem item={item} onToggleCompleted={onToggleCompleted} />}
+      renderItem={({ item }) => (
+        <RenderChapterItem item={item} onToggleCompleted={onToggleCompleted} />
+      )}
       ListHeaderComponent={
         <Image
           source={headerSource}
