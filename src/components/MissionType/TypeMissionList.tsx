@@ -5,6 +5,7 @@ import { RenderTypeMissionItem } from "./MissionTypeList/RenderTypeMissionItem";
 import { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { HeaderImage } from "./MissionTypeList/HeaderImage";
 type Props = {
   sym: string;
 };
@@ -32,6 +33,7 @@ export const TypeMissionList = ({ sym }: Props) => {
       data={missionsToRender as Mission[]}
       keyExtractor={(item) => item.ID.toString()}
       renderItem={({ item }) => <RenderTypeMissionItem item={item} />}
+      ListHeaderComponent={<HeaderImage sym={sym} />}
     />
   );
 };
