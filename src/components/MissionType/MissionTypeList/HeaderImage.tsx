@@ -15,7 +15,7 @@ export const HeaderImage = ({ sym }: { sym: string }) => {
   return (
     <Image
       source={source}
-      style={{ width: "100%", height: 220, backgroundColor: "#00000033" }}
+      style={{ width: "100%", height: 220, backgroundColor: "#00000033", marginBottom: -5 }}
       resizeMode="cover"
     />
   );

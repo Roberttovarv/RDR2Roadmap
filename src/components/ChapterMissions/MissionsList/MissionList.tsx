@@ -31,7 +31,7 @@ export const MissionList = ({ chapter }: Props) => {
       ListHeaderComponent={
         <Image
           source={headerSource}
-          style={{ width: "100%", height: 200, backgroundColor: "#00000033"}}
+      style={{ width: "100%", height: 220, backgroundColor: "#00000033", marginBottom: -5 }}
           resizeMode="cover"
         />}
     />
