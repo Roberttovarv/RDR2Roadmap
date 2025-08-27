@@ -4,34 +4,40 @@ import { RenderChapterNumber } from "./RenderChapterNumber";
 import { Colors } from "../../../utils/colors";
 import { Mission } from "../../../types";
 import { CustomButton } from "../CustomButton";
-import { useEffect, useState } from "react";
-import { getAllMissions, toggleCompleted } from "../../storage/missions";
+import { useState } from "react";
+import { toggleCompleted } from "../../storage/missions";
+import { LANG } from "../../../device";
 
 export const RenderFooter = ({ mission }: { mission: Mission }) => {
   const [completed, setCompleted] = useState<boolean>(mission.completed);
-  const [buttonText, setButtonText] = useState<string>(
-    mission.completed ? "Set as not completed" : "Set as completed"
-  );
+
+  const getButtonText = (isCompleted: boolean) => {
+    if (LANG === "es") {
+      return isCompleted ? "Marcar como no completada" : "Marcar como completada";
+    }
+    return isCompleted ? "Set as not completed" : "Set as completed";
+  };
+
+  const [buttonText, setButtonText] = useState<string>(getButtonText(mission.completed));
 
   const handlePress = async () => {
     const next = !completed;
-    setTimeout(()=>{
+    setTimeout(() => {
       setCompleted(next);
-
-      setButtonText(next ? "Set as not completed" : "Set as completed");
-    },100)
+      setButtonText(getButtonText(next));
+    }, 100);
 
     try {
       await toggleCompleted(mission.ID, next);
     } catch (e) {
-      setTimeout(()=>{
-          setCompleted(!next);
-      
-          setButtonText(!next ? "Set as not completed" : "Set as completed");
-    },100)
+      setTimeout(() => {
+        setCompleted(!next);
+        setButtonText(getButtonText(!next));
+      }, 100);
       console.error("Error toggling mission:", e);
     }
-  }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.data}>

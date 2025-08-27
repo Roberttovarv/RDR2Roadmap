@@ -1,3 +1,5 @@
+import { NavigatorScreenParams } from "@react-navigation/native";
+
 export interface Mission {
   ID: number;
   sym: string;
@@ -24,7 +26,7 @@ export type RootStackParamList = {
   Type: {sym: string}
 };
 export type DrawerParamList = {
-  Main: undefined;          
+  Main: NavigatorScreenParams<RootStackParamList>;          
   SymbolsGuide: undefined;
   About: undefined;
   YourProgress: undefined;

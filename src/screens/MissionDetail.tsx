@@ -1,7 +1,7 @@
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { useRoute, RouteProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
-import { DEVICE_LANGUAGE } from "../../device";
+import { DEVICE_LANGUAGE, LANG } from "../../device";
 import { RenderHeader } from "../components/MissionDetails/RenderHeader";
 import { RenderBody } from "../components/MissionDetails/RenderBody";
 import { RenderFooter } from "../components/MissionDetails/RenderFooter";
@@ -15,7 +15,7 @@ export const MissionDetail = () => {
   const navigation = useNavigation<Nav>()
 
   useLayoutEffect(()=> {
-    navigation.setOptions({title: "Details"})
+    navigation.setOptions({title: LANG ==="es" ? "Detalles" : "Details"})
   })
   const { params } = useRoute<MissionDetailsRoute>();
   const { mission } = params;

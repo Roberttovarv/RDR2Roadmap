@@ -58,6 +58,7 @@ export const RenderTypeMissionItem = ({
           onPress={() =>
             navigation.navigate("MissionDetails", { mission: item })
           }
+          hitSlop={10}
         >
           <View style={styles.listCenter}>
             <Text

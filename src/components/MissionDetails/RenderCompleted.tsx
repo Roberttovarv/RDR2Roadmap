@@ -2,6 +2,7 @@ import { Entypo } from "@expo/vector-icons/";
 import { Text, StyleSheet, View } from "react-native";
 
 import { Colors } from "../../../utils/colors";
+import { LANG } from "../../../device";
 
 export const RenderCompleted = ({ completed }: { completed: boolean }) => {
 
@@ -9,7 +10,7 @@ export const RenderCompleted = ({ completed }: { completed: boolean }) => {
     const isCompleted = completed ? <Entypo name="check" size={28} color={Colors.brown_green} /> : <Entypo name="cross" size={32} color={Colors.dark_brown} />
 
     return <View style={styles.container}>
-        <Text style={styles.text}>Completed:</Text>
+        <Text style={styles.text}>{LANG === "es" ? "Completada" : "Completed:"}</Text>
          {isCompleted}
         </View>
 };

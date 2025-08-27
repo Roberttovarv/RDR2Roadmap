@@ -9,6 +9,8 @@ import { MissionTypeCard } from "../components/MissionType/MissionTypeCards";
 import { SwitchScreenButton } from "../components/SwitchScreenButton";
 import { GridSwitchAnimation } from "../components/GridSwitchAnimation";
 import { useState } from "react";
+import { LANG } from "../../device";
+
 
 export const ChaptersGrid = () => {
   const { width } = Dimensions.get("window");
@@ -24,8 +26,8 @@ const Header = (
         />
 
         <SwitchScreenButton
-          arg1="By Chapter"
-          arg2="By Type"
+          arg1= {LANG === "es" ? "Por capítulo" : "By Chapter"}
+          arg2={LANG === "es" ? "Por tipo" : "By Type"}
           screen={defaultScreen}
           onPress={setDefaultScreen}
         />

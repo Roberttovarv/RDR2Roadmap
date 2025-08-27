@@ -1,5 +1,7 @@
 import { Text, StyleSheet, View } from "react-native";
 import { Colors } from "../../../utils/colors";
+import { LANG } from "../../../device";
+
 
 export const RenderChapterNumber = ({
   chapter,
@@ -11,12 +13,12 @@ export const RenderChapterNumber = ({
   if (typeof chapter === "string")
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Epilogue {parseInt(chapter[chapter.length -1]) > 1 ? "II" : "I"}</Text>
+        <Text style={styles.text}>{LANG ==="es" ? "Epílogo" : "Epilogue"} {parseInt(chapter[chapter.length -1]) > 1 ? "II" : "I"}</Text>
       </View>
     );
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Chapter: {chapter}</Text>
+      <Text style={styles.text}>{LANG ==="es" ? "Capítulo" : "Chapter"} {chapter}</Text>
     </View>
   );
 };

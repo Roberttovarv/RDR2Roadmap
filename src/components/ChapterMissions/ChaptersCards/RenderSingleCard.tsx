@@ -9,9 +9,11 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import { Colors } from "../../../../utils/colors";
 import { renderChapterSymbol } from "./renderChapterSymbol";
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect } from "react";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../../../types";
+import { LANG } from "../../../../device";
+
 
 type ChapterCardNavigation = NativeStackNavigationProp<
   RootStackParamList,
@@ -32,11 +34,14 @@ export const RenderSingleCard = ({ chapter, itemWidth }: Props) => {
   }, [navigation]);
 
   const ROMAN: Record<number, string> = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI"}
-  const title =
-    typeof chapter === "string" && chapter.startsWith("EP")
-      ? `Epilogue ${ROMAN[Number(String(chapter.slice(2)))]}`
+const title =
+  typeof chapter === "string" && chapter.startsWith("EP")
+    ? LANG === "es"
+      ? `Epílogo ${ROMAN[Number(String(chapter.slice(2)))]}`
+      : `Epilogue ${ROMAN[Number(String(chapter.slice(2)))]}`
+    : LANG === "es"
+      ? `Capítulo ${ROMAN[Number(String(chapter))]}`
       : `Chapter ${ROMAN[Number(String(chapter))]}`;
-
   return (
     <Pressable
       onPress={() => navigation.navigate("Chapter", { chapter })}
