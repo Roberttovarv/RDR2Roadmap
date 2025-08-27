@@ -12,18 +12,45 @@ export const MainStack = () => (
   <ScreenBackground bg={1}>
     <Stack.Navigator
       screenOptions={{
-        headerBackButtonDisplayMode: "minimal",
         contentStyle: { backgroundColor: "transparent" },
+        headerBackButtonDisplayMode: "minimal",
         headerStyle: { backgroundColor: Colors.darkest_brown },
         headerTintColor: Colors.map,
         headerTitleStyle: { fontFamily: "Rye_400Regular", fontSize: 20 },
         headerTitleAlign: "center",
       }}
     >
-      <Stack.Screen name="Chapters" component={ChaptersGrid} />
-      <Stack.Screen name="Chapter" component={ChapterScreen} />
-      <Stack.Screen name="MissionDetails" component={MissionDetail} />
-      <Stack.Screen name="Type" component={MissionTypeScreen} />
+      <Stack.Screen
+        name="Chapters"
+        component={ChaptersGrid}
+        options={{ headerShown: false }}
+      />
+
+      <Stack.Screen
+        name="Chapter"
+        component={ChapterScreen}
+        listeners={({ navigation }) => ({
+          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+        })}
+      />
+      <Stack.Screen
+        name="MissionDetails"
+        component={MissionDetail}
+        listeners={({ navigation }) => ({
+          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+        })}
+      />
+      <Stack.Screen
+        name="Type"
+        component={MissionTypeScreen}
+        listeners={({ navigation }) => ({
+          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+        })}
+      />
     </Stack.Navigator>
   </ScreenBackground>
 );
+
