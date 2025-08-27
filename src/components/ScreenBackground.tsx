@@ -1,15 +1,22 @@
-import { ImageBackground, View, StyleSheet } from "react-native";
+import { ImageBackground, View, StyleSheet, ImageSourcePropType } from "react-native";
 
-export const ScreenBackground = ({ children }: { children: React.ReactNode }) => (
+type num = 1 | 2
+const images: Record<number, ImageSourcePropType> = {
+  1: require("../../assets/bg_wood.webp"),
+  2: require("../../assets/bg_paper.webp")
+}
+export const ScreenBackground = ({ children, bg }: { children: React.ReactNode, bg: number }) => {
+  const NUM = bg as num
+  return (
   <ImageBackground
-    source={require("../../assets/bg_wood.webp")}
+    source={images[NUM]}
     style={styles.bg}
     imageStyle={{ resizeMode: "cover" }}
     fadeDuration={0}
   >
     <View style={styles.inner}>{children}</View>
   </ImageBackground>
-);
+);}
 
 const styles = StyleSheet.create({
   bg: { flex: 1 },

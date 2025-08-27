@@ -23,3 +23,9 @@ export type RootStackParamList = {
   MissionList: {mission: Mission}
   Type: {sym: string}
 };
+export type DrawerParamList = {
+  Main: undefined;          
+  SymbolsGuide: undefined;
+  About: undefined;
+  YourProgress: undefined;
+};

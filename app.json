@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/logo.webp",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "transparent"
     },
     "ios": {
       "supportsTablet": true
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.webp",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "transparent"
       },
       "edgeToEdgeEnabled": true
     },

@@ -10,7 +10,7 @@ import { getAllMissions, toggleCompleted } from "../../storage/missions";
 export const RenderFooter = ({ mission }: { mission: Mission }) => {
   const [completed, setCompleted] = useState<boolean>(mission.completed);
   const [buttonText, setButtonText] = useState<string>(
-    mission.completed ? "Set as uncompleted" : "Set as completed"
+    mission.completed ? "Set as not completed" : "Set as completed"
   );
 
   const handlePress = async () => {
@@ -18,7 +18,7 @@ export const RenderFooter = ({ mission }: { mission: Mission }) => {
     setTimeout(()=>{
       setCompleted(next);
 
-      setButtonText(next ? "Set as uncompleted" : "Set as completed");
+      setButtonText(next ? "Set as not completed" : "Set as completed");
     },100)
 
     try {
@@ -27,7 +27,7 @@ export const RenderFooter = ({ mission }: { mission: Mission }) => {
       setTimeout(()=>{
           setCompleted(!next);
       
-          setButtonText(!next ? "Set as uncompleted" : "Set as completed");
+          setButtonText(!next ? "Set as not completed" : "Set as completed");
     },100)
       console.error("Error toggling mission:", e);
     }
