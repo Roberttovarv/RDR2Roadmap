@@ -30,7 +30,7 @@ export const MainStack = () => (
         name="Chapter"
         component={ChapterScreen}
         listeners={({ navigation }) => ({
-          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false, }),
           blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
         })}
       />

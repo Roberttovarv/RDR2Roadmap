@@ -1,4 +1,4 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DrawerParamList } from "../../types";
 import { ScreenBackground } from "../components/ScreenBackground";
@@ -18,7 +18,9 @@ export const MainScreen = () => {
           screenOptions={{
             headerTransparent: true,
             headerTintColor: Colors.map,
-            headerBackgroundContainerStyle: { backgroundColor: Colors.darkest_brown },
+            headerBackgroundContainerStyle: {
+              backgroundColor: Colors.darkest_brown,
+            },
             sceneStyle: { backgroundColor: "transparent" },
             drawerType: Platform.select({ ios: "front", android: "front" }),
             drawerActiveTintColor: Colors.map,
@@ -32,14 +34,22 @@ export const MainScreen = () => {
           <Drawer.Screen
             name="Main"
             component={MainStack}
-            options={{
-              drawerLabel: "Home",
-              headerShown: false,
-              headerTransparent: true,
-              headerTitle: "",
-              headerStyle: {backgroundColor: "transparent"},
+            options={({ route }) => {
+              const routeName = getFocusedRouteNameFromRoute(route) ?? "Chapters";
+              const shouldHide = ["Chapter", "MissionDetails", "Type"].includes(routeName);
 
-              headerTintColor: Colors.map,
+              return {
+                drawerLabel: "Home",
+                headerShown: !shouldHide,
+                swipeEnabled: !shouldHide,
+                drawerType: shouldHide ? "back" : Platform.select({ ios: "front", android: "front" }),
+
+                headerTransparent: !shouldHide,
+                headerTitle: shouldHide ? undefined : "",
+                headerStyle: { backgroundColor: shouldHide ? Colors.darkest_brown : "transparent" },
+                headerBackgroundContainerStyle: { backgroundColor: shouldHide ? Colors.darkest_brown : "transparent" },
+                headerTintColor: Colors.map,
+              };
             }}
           />
           <Drawer.Screen
