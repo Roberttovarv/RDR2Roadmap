@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
     padding: 6,
   },
   text: {
-    fontFamily: "Smokum_400Regular",
-    fontSize: 24,
+    fontFamily: "Rye_400Regular",
+    fontSize: 16,
     color: Colors.map,
     textAlign: "center",
   },
