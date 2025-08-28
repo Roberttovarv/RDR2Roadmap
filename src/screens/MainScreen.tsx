@@ -23,9 +23,9 @@ export const MainScreen = () => {
             headerTransparent: true,
             headerTintColor: Colors.map,
             headerBackgroundContainerStyle: {
-              backgroundColor: Colors.darkest_brown, 
+              backgroundColor: Colors.darkest_brown,
             },
-            headerTitleStyle: {fontFamily: "Ryue_400Regular", fontSize: 22},
+            headerTitleStyle: { fontFamily: "Ryue_400Regular", fontSize: 22 },
             sceneStyle: { backgroundColor: "transparent" },
             drawerType: Platform.select({ ios: "front", android: "front" }),
             drawerActiveTintColor: Colors.map,
@@ -34,7 +34,7 @@ export const MainScreen = () => {
               backgroundColor: Colors.darkest_brown + Opacity[9],
               width: "60%",
             },
-            drawerLabelStyle: { fontFamily: "Rye_400Regular", fontSize: 17}
+            drawerLabelStyle: { fontFamily: "Rye_400Regular", fontSize: 17 },
           }}
         >
           <Drawer.Screen
@@ -48,7 +48,7 @@ export const MainScreen = () => {
               );
 
               return {
-              drawerLabel: LANG === "es" ? "Inicio" : "Home",
+                drawerLabel: LANG === "es" ? "Inicio" : "Home",
                 headerShown: !shouldHide,
                 swipeEnabled: !shouldHide,
                 drawerType: shouldHide
@@ -80,6 +80,8 @@ export const MainScreen = () => {
               headerTransparent: false,
               headerStyle: { backgroundColor: Colors.darkest_brown },
               headerTintColor: Colors.map,
+              headerTitleStyle: { fontFamily: "Rye_400Regular" },
+              headerTitleAlign: "center",
             }}
           />
           <Drawer.Screen
@@ -87,7 +89,7 @@ export const MainScreen = () => {
             component={YourProgress}
             options={{
               drawerLabel: LANG === "es" ? "Tu Progreso" : "Your Progress",
-              headerTitle: LANG === "es" ? "Tu Progreso" : "Your Progress",
+              headerTitle: "",
               headerTransparent: false,
               headerStyle: { backgroundColor: Colors.darkest_brown },
               headerTintColor: Colors.map,
@@ -102,7 +104,10 @@ export const MainScreen = () => {
               headerTransparent: false,
               headerStyle: { backgroundColor: Colors.darkest_brown },
               headerTintColor: Colors.map,
-            }}          />
+              headerTitleStyle: { fontFamily: "Rye_400Regular" },
+              headerTitleAlign: "center",
+            }}
+          />
         </Drawer.Navigator>
       </NavigationContainer>
     </ScreenBackground>

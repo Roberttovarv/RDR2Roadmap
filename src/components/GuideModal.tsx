@@ -8,7 +8,13 @@ export const GuideModal = () => {
 
   return (
     <>
-      <Pressable onPress={() => setVisible(true)} style={({pressed}) => [styles.openButton, pressed && {backgroundColor: Colors.map}]}>
+      <Pressable
+        onPress={() => setVisible(true)}
+        style={({ pressed }) => [
+          styles.openButton,
+          pressed && { backgroundColor: Colors.map },
+        ]}
+      >
         <Text style={styles.openButtonText}>?</Text>
       </Pressable>
 
@@ -19,9 +25,25 @@ export const GuideModal = () => {
         onRequestClose={() => setVisible(false)}
       >
         <View style={styles.modalRoot}>
-          <Pressable onPress={() => setVisible(false)} style={styles.backdrop} />
+          <Pressable
+            onPress={() => setVisible(false)}
+            style={styles.backdrop}
+          />
           <View style={styles.sheet}>
-            <Pressable onPress={() => {setTimeout(() => {setVisible(false)}, 100)}} style={({pressed}) => [styles.closeBtn, pressed && {opacity: .5, backgroundColor: Colors.fuel_yellow + Opacity[5]}]}>
+            <Pressable
+              onPress={() => {
+                setTimeout(() => {
+                  setVisible(false);
+                }, 50);
+              }}
+              style={({ pressed }) => [
+                styles.closeBtn,
+                pressed && {
+                  opacity: 0.5,
+                  backgroundColor: Colors.fuel_yellow + Opacity[5],
+                },
+              ]}
+            >
               <Text style={styles.closeBtnText}>X</Text>
             </Pressable>
 
@@ -46,16 +68,15 @@ const styles = StyleSheet.create({
     height: 40,
     borderColor: Colors.darkest_brown,
     borderWidth: 2,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
     alignItems: "center",
     justifyContent: "center",
   },
   openButtonText: {
     color: Colors.darkest_brown,
     fontSize: 22,
-    fontFamily: "Rye",
+    fontFamily: "Rye_400Regular",
     textAlign: "center",
+
   },
   modalRoot: {
     flex: 1,
@@ -70,7 +91,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     overflow: "hidden",
-    paddingTop: 24
+    paddingTop: 24,
   },
   closeBtn: {
     position: "absolute",
@@ -88,7 +109,7 @@ const styles = StyleSheet.create({
   closeBtnText: {
     fontSize: 16,
     color: Colors.darkest_brown,
-    fontFamily: "Rye",
+    fontFamily: "Rye_400Regular",
   },
   content: {
     flex: 1,
