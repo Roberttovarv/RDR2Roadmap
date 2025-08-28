@@ -27,6 +27,14 @@
     "web": {
       "favicon": "./assets/logo.webp"
     },
-    "plugins": ["expo-localization", "expo-font"]
+    "plugins": [
+      "expo-localization",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b44c59fb-521b-453a-8f63-b53d9a143502"
+      }
+    }
   }
 }
