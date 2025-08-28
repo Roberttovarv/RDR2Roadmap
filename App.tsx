@@ -10,6 +10,7 @@ import { Smokum_400Regular } from "@expo-google-fonts/smokum";
 import { Colors } from "./utils/colors";
 import { useEffect } from "react";
 import { initMissions } from "./src/storage/missions";
+import { DeviceLangTag, LANG } from "./device";
 export default function App() {
   const [fontsLoaded] = useFonts({
     EduNSWACTFoundation_400Regular,

@@ -1,4 +1,3 @@
-// src/screens/SymbolsGuide.tsx
 import React from "react";
 import { ScrollView, View, Text, StyleSheet } from "react-native";
 import { Colors } from "../../utils/colors";
@@ -8,14 +7,13 @@ import {
   FontAwesome5,
   Fontisto,
 } from "@expo/vector-icons";
-import { DEVICE_LANGUAGE } from "../../device";
+import { LANG } from "../../device";
 import {
   SafeAreaView,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
 
-type Lang = "es" | "en";
-const LANG = (DEVICE_LANGUAGE as Lang) ?? "en";
+const formatText = (s: string) => s.replace(/\. /g, ".\n");
 
 const SectionTitle = ({ en, es }: { en: string; es: string }) => (
   <Text style={styles.sectionTitle}>{LANG === "es" ? es : en}</Text>
@@ -33,7 +31,9 @@ const Row = ({
   <View style={styles.row}>
     <View style={styles.iconWrap}>{icon}</View>
     <View style={styles.textWrap}>
-      <Text style={styles.line}>{LANG === "es" ? es : en}</Text>
+      <Text style={styles.line}>
+        {LANG === "es" ? formatText(es) : formatText(en)}
+      </Text>
     </View>
   </View>
 );
@@ -114,6 +114,12 @@ export const SymbolsGuide = () => {
           es="Misiones de Amigos. Peticiones de compañeros (iniciales)."
         />
 
+        <Row
+          icon={<FontAwesome5 name="hashtag" size={28} color={Colors.darkest_brown} />}
+          en='Numbers indicate the Chapter to which the mission belongs and "EP" indicates the Epilogue.'
+          es='Los números indican el Capítulo al que pertenece la misión y "EP" indica el Epílogo.'
+        />
+
         <SectionTitle en="UI Cues" es="Indicadores de la interfaz" />
 
         <Row
@@ -140,8 +146,8 @@ export const SymbolsGuide = () => {
 
         <Row
           icon={
-            <FontAwesome5
-              name="hourglass-half"
+            <MaterialCommunityIcons
+              name="timer"
               size={22}
               color={Colors.darkest_brown}
             />
@@ -206,7 +212,7 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: "row",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: 12,
     backgroundColor: Colors.darkest_brown + "1A",
     borderColor: Colors.darkest_brown,
@@ -218,12 +224,15 @@ const styles = StyleSheet.create({
     width: 34,
     alignItems: "center",
     paddingTop: 2,
+    alignContent: "center"
   },
   textWrap: { flex: 1 },
   line: {
     fontFamily: "EduNSWACTFoundation_400Regular",
     fontSize: 18,
     color: Colors.darkest_brown,
+    textAlign: "center",
+    lineHeight: 24,
   },
   sampleText: {
     fontFamily: "EduNSWACTFoundation_600SemiBold",

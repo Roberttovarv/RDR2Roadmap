@@ -8,9 +8,8 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { Colors, Opacity } from "../../utils/colors";
-import { DEVICE_LANGUAGE } from "../../device";
+import { LANG } from "../../device";
 
-type Lang = "es" | "en";
 export type FilterKey = "all" | "completed" | "not_completed";
 type Props = {
   value: FilterKey;
@@ -25,7 +24,6 @@ const titles = {
 } as const;
 
 export const FilterButton = ({value, onChange}: Props) => {
-  const LANG = DEVICE_LANGUAGE as Lang;
   const triggerRef = useRef<View>(null);
 
   const [shown, setShown] = useState(false);

@@ -6,6 +6,7 @@ import { MissionDetail } from "../screens/MissionDetail";
 import { MissionTypeScreen } from "../screens/MissionTypeScreen";
 import { Colors } from "../../utils/colors";
 import { ScreenBackground } from "../components/ScreenBackground";
+
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const MainStack = () => (

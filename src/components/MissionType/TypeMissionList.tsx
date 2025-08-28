@@ -7,7 +7,7 @@ import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { HeaderImage } from "./MissionTypeList/HeaderImage";
 import { getMissionsByType, toggleCompleted } from "../../storage/missions";
-import { DEVICE_LANGUAGE } from "../../../device";
+import { LANG } from "../../../device";
 import { FilterButton, type FilterKey } from "../FilterButton";
 
 type Nav = NativeStackNavigationProp<RootStackParamList, "Type">;
@@ -16,7 +16,7 @@ type Props = {
 };
 const SYMBOLS = new Set(["*", "BOUNTY", "DEBT", "GANG", "?"]);
 const getTypeTitle = (sym: string) => {
-  const es = DEVICE_LANGUAGE === "es";
+  const es = LANG === "es";
   if (sym === "*") return es ? "Historia" : "Story";
   if (sym === "BOUNTY") return es ? "Cazarrecompensas" : "Bounty";
   if (sym === "DEBT") return es ? "Deudas" : "Debt Collection";

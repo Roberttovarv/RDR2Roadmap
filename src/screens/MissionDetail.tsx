@@ -1,7 +1,7 @@
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { useRoute, RouteProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
-import { DEVICE_LANGUAGE, LANG } from "../../device";
+import {  LANG } from "../../device";
 import { RenderHeader } from "../components/MissionDetails/RenderHeader";
 import { RenderBody } from "../components/MissionDetails/RenderBody";
 import { RenderFooter } from "../components/MissionDetails/RenderFooter";
@@ -25,7 +25,7 @@ export const MissionDetail = () => {
     sym,
   } = mission;
 
-  const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
+  const title = LANG === "es" ? mission_es : mission_en;
 
   return (
     <>

@@ -6,7 +6,7 @@ import {
   ImageBackground,
 } from "react-native";
 import { RootStackParamList, Mission } from "../../../../types";
-import { DEVICE_LANGUAGE } from "../../../../device";
+import { LANG } from "../../../../device";
 import { Colors } from "../../../../utils/colors";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -35,7 +35,7 @@ export const RenderTypeMissionItem = ({
     ID,
   } = item;
   const navigation = useNavigation<MissionDetailsNav>();
-  const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
+  const title = LANG === "es" ? mission_es : mission_en;
   const textStyle = !has_progress ? styles.textSecondary : styles.text;
 
   return (

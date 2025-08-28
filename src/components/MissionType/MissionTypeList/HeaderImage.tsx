@@ -1,4 +1,5 @@
 import { Image } from "react-native";
+import { GuideModal } from "../../GuideModal";
 
 const imageSource: Record<string, any> = {
   "*": require("../../../../assets/grids-template/type/5.webp"),
@@ -13,10 +14,18 @@ export const HeaderImage = ({ sym }: { sym: string }) => {
   const source = imageSource[sym] || defaultImage;
 
   return (
-    <Image
-      source={source}
-      style={{ width: "100%", height: 220, backgroundColor: "#00000033", marginBottom: -5 }}
-      resizeMode="cover"
-    />
+    <>
+      <Image
+        source={source}
+        style={{
+          width: "100%",
+          height: 220,
+          backgroundColor: "#00000033",
+          marginBottom: -5,
+        }}
+        resizeMode="cover"
+      />
+      <GuideModal />
+    </>
   );
 };

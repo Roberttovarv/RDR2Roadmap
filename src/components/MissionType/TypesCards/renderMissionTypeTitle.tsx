@@ -1,14 +1,14 @@
 import { StyleSheet, Text } from "react-native";
 import { Colors } from "../../../../utils/colors";
-import { DEVICE_LANGUAGE } from "../../../../device";
+import { LANG } from "../../../../device";
 
-const STORY = DEVICE_LANGUAGE === "es" ? "Historia" : "Story";
-const BOUNTY = DEVICE_LANGUAGE === "es" ? "Cazarrecompensas" : "Bounty";
-const DEBT = DEVICE_LANGUAGE === "es" ? "Deudas" : "Debt Collection";
+const STORY = LANG === "es" ? "Historia" : "Story";
+const BOUNTY = LANG === "es" ? "Cazarrecompensas" : "Bounty";
+const DEBT = LANG === "es" ? "Deudas" : "Debt Collection";
 const GANG =
-  DEVICE_LANGUAGE === "es" ? "Actividades de la banda" : "Gang Activities";
-const EXT = DEVICE_LANGUAGE === "es" ? "Extraños" : "Strangers";
-const MAIN = DEVICE_LANGUAGE === "es" ? "Amigos" : "Friends";
+  LANG === "es" ? "Actividades de la banda" : "Gang Activities";
+const EXT = LANG === "es" ? "Extraños" : "Strangers";
+const MAIN = LANG === "es" ? "Amigos" : "Friends";
 
 export const renderMissionTypeTitle = (sym: string) => {
   if (sym === "*") return <Text style={styles.header}>{STORY}</Text>;

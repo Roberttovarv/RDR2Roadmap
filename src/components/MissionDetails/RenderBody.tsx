@@ -3,15 +3,15 @@ import { RenderDeadline } from "./RenderDeadline";
 import { RenderNotes } from "./RenderNotes";
 import { RenderLocation } from "./RenderLocation";
 import { Mission } from "../../../types";
-import { DEVICE_LANGUAGE } from "../../../device";
+import { LANG } from "../../../device";
 import { View } from "react-native";
 
 export const RenderBody = ({mission} : {mission: Mission}) => {
-      const notes_raw = DEVICE_LANGUAGE === "es" ? mission.notes_es : mission.notes_en;
+      const notes_raw = LANG === "es" ? mission.notes_es : mission.notes_en;
       const start =
-        DEVICE_LANGUAGE === "es" ? mission.starting_at_es : mission.starting_at_en;
+        LANG === "es" ? mission.starting_at_es : mission.starting_at_en;
       const end =
-        DEVICE_LANGUAGE === "es" ? mission.ending_at_es : mission.ending_at_en;
+        LANG === "es" ? mission.ending_at_es : mission.ending_at_en;
         
         return (
   <View>

@@ -1,4 +1,4 @@
-import { FlatList, Image } from "react-native";
+import { FlatList, Image, ImageSourcePropType } from "react-native";
 import { RenderChapterItem } from "./components/RenderChapterItem";
 import { Mission } from "../../../../types";
 import {
@@ -17,6 +17,7 @@ import {
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { FilterButton, type FilterKey } from "../../FilterButton";
 import { LANG } from "../../../../device";
+import { GuideModal } from "../../GuideModal";
 
 type Props = {
   chapter: number | string;
@@ -35,10 +36,31 @@ const chapterImages: Record<string, any> = {
   EP2: require("../../../../assets/grids-template/chapter/8.webp"),
 };
 
+const Header = ({ source }: { source: ImageSourcePropType }) => {
+  return (
+    <>
+      <Image
+        source={source}
+        style={{
+          width: "100%",
+          height: 220,
+          backgroundColor: "#00000033",
+          marginBottom: -5,
+        }}
+        resizeMode="cover"
+      />
+      <GuideModal />
+    </>
+  );
+};
+
 export const MissionList = ({ chapter }: Props) => {
   const [missions, setMissions] = useState<Mission[]>([]);
   const [filter, setFilter] = useState<FilterKey>("all");
   const navigation = useNavigation<Nav>();
+
+  const headerSource = chapterImages[String(chapter)];
+
   const ROMAN: Record<number, string> = {
     1: "I",
     2: "II",
@@ -91,7 +113,6 @@ export const MissionList = ({ chapter }: Props) => {
     [chapter]
   );
 
-  const headerSource = chapterImages[String(chapter)];
   return (
     <FlatList
       data={filtered as Mission[]}
@@ -99,18 +120,7 @@ export const MissionList = ({ chapter }: Props) => {
       renderItem={({ item }) => (
         <RenderChapterItem item={item} onToggleCompleted={onToggleCompleted} />
       )}
-      ListHeaderComponent={
-        <Image
-          source={headerSource}
-          style={{
-            width: "100%",
-            height: 220,
-            backgroundColor: "#00000033",
-            marginBottom: -5,
-          }}
-          resizeMode="cover"
-        />
-      }
+      ListHeaderComponent={<Header source={headerSource} />}
     />
   );
 };

@@ -1,5 +1,5 @@
 import { StyleSheet, Text } from "react-native";
-import { DEVICE_LANGUAGE } from "../../../device";
+import { LANG } from "../../../device";
 import { Colors } from "../../../utils/colors";
 
 type Props = {
@@ -15,9 +15,9 @@ start, end,
 
 
 
-  const symbol_argument = DEVICE_LANGUAGE === "es" ? "Ocurre en:" : "Takes place in:"
-  const mission_start_argument = DEVICE_LANGUAGE === "es" ? "Comienza en:" : "Starts at:"
-  const mission_end_argument = DEVICE_LANGUAGE === "es" ? "Termina en:" : "Ends at:"
+  const symbol_argument = LANG === "es" ? "Ocurre en:" : "Takes place in:"
+  const mission_start_argument = LANG === "es" ? "Comienza en:" : "Starts at:"
+  const mission_end_argument = LANG === "es" ? "Termina en:" : "Ends at:"
 
   if (!start && !end) return null;
   if (symbols.includes(sym) && start === end) {

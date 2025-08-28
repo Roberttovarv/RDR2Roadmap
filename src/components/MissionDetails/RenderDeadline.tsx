@@ -1,6 +1,6 @@
 import { StyleSheet, Text } from "react-native";
 
-import { DEVICE_LANGUAGE } from "../../../device";
+import { LANG } from "../../../device";
 import { Colors } from "../../../utils/colors";
 
 export const RenderDeadline = ({
@@ -11,15 +11,15 @@ export const RenderDeadline = ({
 
 
   const EP1_LINE =
-    DEVICE_LANGUAGE === "es"
+    LANG === "es"
       ? "Debe completarse antes del Epílogo I"
       : "Must be completed before Epilogue I";
   const EP2_LINE =
-    DEVICE_LANGUAGE === "es"
+    LANG === "es"
       ? "Debe completarse antes del Epílogo II"
       : "Must be completed before Epilogue II";
   const CHAP_LINE =
-    DEVICE_LANGUAGE === "es"
+    LANG === "es"
       ? `Debe completarse antes del capítulo ${deadline}`
       : `Must be completed before chapter ${deadline}`;
 

@@ -1,6 +1,10 @@
 import * as Localization from 'expo-localization';
 
-export const DEVICE_LANGUAGE: string = "es"
+export const DeviceLangTag = Localization.getLocales()[0]?.languageTag.split("-")[0]
 
-type Lang = "es" | "en";
-export const LANG = (DEVICE_LANGUAGE as Lang) ?? "en";
+
+const handleLang = (lang: string) => {
+    if (lang === "es") return lang
+    return "en"
+}
+export const LANG = handleLang(DeviceLangTag)

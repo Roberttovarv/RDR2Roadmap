@@ -6,8 +6,8 @@ import {
   ImageBackground,
 } from "react-native";
 import { Mission, RootStackParamList } from "../../../../../types";
-import { DEVICE_LANGUAGE } from "../../../../../device";
-import { Colors, Opacity } from "../../../../../utils/colors";
+import { LANG } from "../../../../../device";
+import { Colors  } from "../../../../../utils/colors";
 import { RenderMissionSymbol } from "./RenderMissionSymbol";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -29,7 +29,7 @@ export const RenderChapterItem = ({
   const { mission_es, mission_en, sym, deadline, completed, has_progress, ID } =
     item;
   const navigation = useNavigation<MissionDetailsNav>();
-  const title = DEVICE_LANGUAGE === "es" ? mission_es : mission_en;
+  const title = LANG === "es" ? mission_es : mission_en;
   const textStyle = !has_progress ? styles.textSecondary : styles.text;
   return (
     <ImageBackground
