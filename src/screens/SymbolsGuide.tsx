@@ -24,12 +24,12 @@ const Row = ({
   en,
   es,
 }: {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   en: string;
   es: string;
 }) => (
   <View style={styles.row}>
-    <View style={styles.iconWrap}>{icon}</View>
+   {icon && <View style={styles.iconWrap}>{icon}</View>}
     <View style={styles.textWrap}>
       <Text style={styles.line}>
         {LANG === "es" ? formatText(es) : formatText(en)}
@@ -159,31 +159,15 @@ export const SymbolsGuide = () => {
         <SectionTitle en="Filter" es="Filtro" />
 
         <Row
-          icon={
-            <FontAwesome5
-              name="filter"
-              size={22}
-              color={Colors.darkest_brown}
-            />
-          }
           en="All: shows every mission."
           es="Todas: muestra todas las misiones."
         />
         <Row
-          icon={
-            <FontAwesome5 name="check" size={22} color={Colors.darkest_brown} />
-          }
+
           en="Completed: only missions you have finished."
           es="Completadas: solo las misiones terminadas."
         />
         <Row
-          icon={
-            <FontAwesome5
-              name="square"
-              size={20}
-              color={Colors.darkest_brown}
-            />
-          }
           en="Not completed: only pending missions."
           es="No completadas: solo las misiones pendientes."
         />
