@@ -1,6 +1,6 @@
 import { Text, StyleSheet, Pressable, View } from "react-native";
 import { Colors } from "../../utils/colors";
-import { useState } from "react";
+import { LANG } from "../../device";
 
 type Props = {
   arg1: string;
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 5,
     borderColor: "black",
-    width: "60%",
+    width: LANG === "es" ? "70%" : "60%",
     elevation: 5,
     shadowColor: "black",
     shadowOffset: { width: -2, height: 2 },
