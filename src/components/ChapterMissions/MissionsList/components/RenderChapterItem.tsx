@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Text,
   View,
@@ -7,7 +8,7 @@ import {
 } from "react-native";
 import { Mission, RootStackParamList } from "../../../../../types";
 import { LANG } from "../../../../../device";
-import { Colors  } from "../../../../../utils/colors";
+import { Colors } from "../../../../../utils/colors";
 import { RenderMissionSymbol } from "./RenderMissionSymbol";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -19,18 +20,18 @@ type MissionDetailsNav = NativeStackNavigationProp<
   "MissionDetails"
 >;
 
-export const RenderChapterItem = ({
-  item,
-  onToggleCompleted,
-}: {
+type Props = {
   item: Mission;
   onToggleCompleted: (id: number, value: boolean) => void;
-}) => {
+};
+
+const RenderChapterItemComponent = ({ item, onToggleCompleted }: Props) => {
   const { mission_es, mission_en, sym, deadline, completed, has_progress, ID } =
     item;
   const navigation = useNavigation<MissionDetailsNav>();
   const title = LANG === "es" ? mission_es : mission_en;
   const textStyle = !has_progress ? styles.textSecondary : styles.text;
+
   return (
     <ImageBackground
       style={{ flex: 1, paddingVertical: 10 }}
@@ -56,7 +57,6 @@ export const RenderChapterItem = ({
             navigation.navigate("MissionDetails", { mission: item })
           }
           hitSlop={10}
-          
         >
           <View style={styles.listCenter}>
             <Text
@@ -87,6 +87,8 @@ export const RenderChapterItem = ({
     </ImageBackground>
   );
 };
+
+export const RenderChapterItem = React.memo(RenderChapterItemComponent);
 
 const styles = StyleSheet.create({
   listContainer: {

@@ -40,9 +40,14 @@ export const ChapterCard = ({
         }}
         ListHeaderComponentStyle={{
           marginHorizontal: -HPAD,
-          marginTop: -GAP, 
+          marginTop: -GAP,
           marginBottom: GAP,
         }}
+        removeClippedSubviews={true}
+        windowSize={7}
+        maxToRenderPerBatch={10}
+        updateCellsBatchingPeriod={50}
+        initialNumToRender={10}
       />
     </View>
   );

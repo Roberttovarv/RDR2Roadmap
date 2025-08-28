@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Text,
   View,
@@ -18,13 +19,12 @@ type MissionDetailsNav = NativeStackNavigationProp<
   "MissionDetails"
 >;
 
-export const RenderTypeMissionItem = ({
-  item,
-  onToggleCompleted,
-}: {
+type Props = {
   item: Mission;
   onToggleCompleted: (id: number, value: boolean) => void;
-}) => {
+};
+
+const RenderTypeMissionItemComponent = ({ item, onToggleCompleted }: Props) => {
   const {
     mission_es,
     mission_en,
@@ -89,6 +89,8 @@ export const RenderTypeMissionItem = ({
     </ImageBackground>
   );
 };
+
+export const RenderTypeMissionItem = React.memo(RenderTypeMissionItemComponent);
 
 const styles = StyleSheet.create({
   listContainer: {

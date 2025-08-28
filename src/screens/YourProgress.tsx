@@ -1,14 +1,49 @@
-import React, { useEffect, useState } from "react";
-import { ScrollView, Text, View, StyleSheet, Pressable } from "react-native";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { FlatList, Pressable, Text, View, StyleSheet } from "react-native";
+import { DrawerNavigationProp } from "@react-navigation/drawer";
+import { useNavigation } from "@react-navigation/native";
 import { Colors, Opacity } from "../../utils/colors";
 import { getAllMissions } from "../storage/missions";
 import { LANG } from "../../device";
 import { Mission, DrawerParamList } from "../../types";
 import { RenderMissionSymbol } from "../components/ChapterMissions/MissionsList/components/RenderMissionSymbol";
-import { useNavigation } from "@react-navigation/native";
 
 type Nav = DrawerNavigationProp<DrawerParamList, "YourProgress">;
-import { DrawerNavigationProp } from "@react-navigation/drawer";
+
+const CARD_HEIGHT = 76; 
+const PendingMissionCard = React.memo(function PendingMissionCard({
+  mission,
+  title,
+  chapterTitle,
+  onPress,
+}: {
+  mission: Mission;
+  title: string;
+  chapterTitle: (c: number | string) => string;
+  onPress: (m: Mission) => void;
+}) {
+  return (
+    <Pressable
+      style={({ pressed }) => [
+        styles.card,
+        pressed && { opacity: 0.6, transform: [{ scale: 0.98 }] },
+      ]}
+      onPress={() => onPress(mission)}
+    >
+      <RenderMissionSymbol
+        sym={mission.sym}
+        size={22}
+        color={Colors.darkest_brown}
+      />
+      <View style={{ flex: 1, marginLeft: 10 }}>
+        <Text style={styles.cardChapter}>{chapterTitle(mission.chapter)}</Text>
+        <Text style={styles.cardTitle} numberOfLines={2} ellipsizeMode="tail">
+          {title}
+        </Text>
+      </View>
+    </Pressable>
+  );
+});
 
 export const YourProgress = () => {
   const [completed, setCompleted] = useState(0);
@@ -29,7 +64,7 @@ export const YourProgress = () => {
   const total = 177;
   const percent = Math.round((completed / total) * 100);
 
-  const chapterTitle = (chapter: number | string) => {
+  const chapterTitle = useCallback((chapter: number | string) => {
     const ROMAN: Record<number, string> = {
       1: "I",
       2: "II",
@@ -44,94 +79,102 @@ export const YourProgress = () => {
     }
     const n = Number(String(chapter));
     return LANG === "es" ? `Capítulo ${ROMAN[n]}` : `Chapter ${ROMAN[n]}`;
-  };
-const goToDetails = (mission: Mission) => {
-  navigation.navigate("Main", {
-    screen: "MissionDetails",
-    params: { mission },
-  });
-};;
+  }, []);
+
+  const goToDetails = useCallback((mission: Mission) => {
+    navigation.navigate("Main", {
+      screen: "MissionDetails",
+      params: { mission },
+    });
+  }, [navigation]);
+
+  const ListHeader = useMemo(
+    () => (
+      <View style={{ alignItems: "center", paddingHorizontal: 20 }}>
+        <Text style={styles.title}>
+          {LANG === "es" ? "Tu Progreso" : "Your Progress"}
+        </Text>
+
+        <Text style={styles.paragraph}>
+          {LANG === "es"
+            ? `Has completado ${completed} de ${total} misiones.`
+            : `You have completed ${completed} out of ${total} missions.`}
+        </Text>
+
+        <View style={styles.progressBar}>
+          <View style={[styles.progressFill, { width: `${percent}%` }]} />
+        </View>
+        <Text style={styles.progressText}>{percent}%</Text>
+
+        <Text style={styles.note}>
+          {LANG === "es"
+            ? "Este progreso se guarda solo en la app y no está sincronizado con RDR2 ni con Rockstar Games."
+            : "This progress is saved only in the app and is not synced with RDR2 or Rockstar Games."}
+        </Text>
+
+        <Text style={[styles.title, { marginTop: 24 }]}>
+          {LANG === "es" ? "Misiones pendientes" : "Pending Missions"}
+        </Text>
+      </View>
+    ),
+    [completed, percent]
+  );
+
+  const renderItem = useCallback(
+    ({ item }: { item: Mission }) => {
+      const title = LANG === "es" ? item.mission_es : item.mission_en;
+      return (
+        <PendingMissionCard
+          mission={item}
+          title={title}
+          chapterTitle={chapterTitle}
+          onPress={goToDetails}
+        />
+      );
+    },
+    [chapterTitle, goToDetails]
+  );
+
+  const keyExtractor = useCallback((m: Mission) => String(m.ID), []);
+  const getItemLayout = useCallback(
+    (_: ArrayLike<Mission> | null | undefined, index: number) => ({
+      length: CARD_HEIGHT,
+      offset: CARD_HEIGHT * index,
+      index,
+    }),
+    []
+  );
+
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>
-        {LANG === "es" ? "Tu Progreso" : "Your Progress"}
-      </Text>
-
-      <Text style={styles.paragraph}>
-        {LANG === "es"
-          ? `Has completado ${completed} de ${total} misiones.`
-          : `You have completed ${completed} out of ${total} missions.`}
-      </Text>
-
-      <View style={styles.progressBar}>
-        <View style={[styles.progressFill, { width: `${percent}%` }]} />
-      </View>
-      <Text style={styles.progressText}>{percent}%</Text>
-
-      <Text style={styles.note}>
-        {LANG === "es"
-          ? "Este progreso se guarda solo en la app y no está sincronizado con RDR2 ni con Rockstar Games."
-          : "This progress is saved only in the app and is not synced with RDR2 or Rockstar Games."}
-      </Text>
-
-      <Text style={[styles.title, { marginTop: 24 }]}>
-        {LANG === "es" ? "Misiones pendientes" : "Pending Missions"}
-      </Text>
-
-      <View style={styles.cardsWrap}>
-        {pendingMissions.map((m) => {
-          const title = LANG === "es" ? m.mission_es : m.mission_en;
-          return (
-            <Pressable
-              key={m.ID}
-              style={({ pressed }) => [
-                styles.card,
-                pressed && { opacity: 0.6, transform: [{ scale: 0.98 }] },
-              ]}
-              onPress={() => goToDetails(m)} // 👈 usar helper
-            >
-              <RenderMissionSymbol
-                sym={m.sym}
-                size={22}
-                color={Colors.darkest_brown}
-              />
-              <View style={{ flex: 1, marginLeft: 10 }}>
-                <Text style={styles.cardChapter}>
-                  {chapterTitle(m.chapter)}
-                </Text>
-                <Text
-                  style={styles.cardTitle}
-                  numberOfLines={2}
-                  ellipsizeMode="tail"
-                >
-                  {title}
-                </Text>
-              </View>
-            </Pressable>
-          );
-        })}
-        {pendingMissions.length === 0 && (
-          <Text style={styles.emptyText}>
-            {LANG === "es"
-              ? "¡Has completado todas las misiones!"
-              : "You have completed all missions!"}
-          </Text>
-        )}
-      </View>
-    </ScrollView>
+    <FlatList
+      data={pendingMissions}
+      keyExtractor={keyExtractor}
+      renderItem={renderItem}
+      ListHeaderComponent={ListHeader}
+      ListEmptyComponent={
+        <Text style={[styles.emptyText, { marginTop: 12 }]}>
+          {LANG === "es"
+            ? "¡Has completado todas las misiones!"
+            : "You have completed all missions!"}
+        </Text>
+      }
+      contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 20 }}
+      removeClippedSubviews
+      windowSize={7}
+      maxToRenderPerBatch={10}
+      updateCellsBatchingPeriod={50}
+      initialNumToRender={12}
+      getItemLayout={getItemLayout}
+    />
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    alignItems: "center",
-  },
   title: {
     fontFamily: "Rye_400Regular",
     fontSize: 26,
     color: Colors.darkest_brown,
-    marginBottom: 16,
+    marginVertical: 16,
     textAlign: "center",
   },
   paragraph: {
@@ -165,11 +208,13 @@ const styles = StyleSheet.create({
     marginTop: 8,
     textAlign: "center",
   },
-
-  cardsWrap: {
-    width: "100%",
-    marginTop: 8,
-    gap: 12,
+  emptyText: {
+    textAlign: "center",
+    fontFamily: "EduNSWACTFoundation_400Regular",
+    fontSize: 16,
+    color: Colors.darkest_brown,
+    opacity: 0.8,
+    marginTop: 6,
   },
   card: {
     flexDirection: "row",
@@ -184,7 +229,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     shadowOffset: { width: -2, height: 2 },
-    elevation: 3,
+    margin: 4
   },
   cardChapter: {
     fontFamily: "EduNSWACTFoundation_600SemiBold",
@@ -194,15 +239,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 20, 
+    fontSize: 20,
     color: Colors.darkest_brown,
-  },
-  emptyText: {
-    textAlign: "center",
-    fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 16,
-    color: Colors.darkest_brown,
-    opacity: 0.8,
-    marginTop: 6,
   },
 });

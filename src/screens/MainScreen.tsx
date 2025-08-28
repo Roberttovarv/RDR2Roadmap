@@ -25,7 +25,7 @@ export const MainScreen = () => {
             headerBackgroundContainerStyle: {
               backgroundColor: Colors.darkest_brown,
             },
-            headerTitleStyle: { fontFamily: "Ryue_400Regular", fontSize: 22 },
+            headerTitleStyle: { fontFamily: "Rye_400Regular", fontSize: 22 },
             sceneStyle: { backgroundColor: "transparent" },
             drawerType: Platform.select({ ios: "front", android: "front" }),
             drawerActiveTintColor: Colors.map,

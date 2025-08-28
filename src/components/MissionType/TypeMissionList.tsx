@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo } from "react";
-import { FlatList, Text, Pressable } from "react-native";
+import { FlatList } from "react-native";
 import { Mission, RootStackParamList } from "../../../types";
 import { RenderTypeMissionItem } from "./MissionTypeList/RenderTypeMissionItem";
 import { useLayoutEffect } from "react";
@@ -78,6 +78,11 @@ export const TypeMissionList = ({ sym }: Props) => {
         />
       )}
       ListHeaderComponent={<HeaderImage sym={sym} />}
+              removeClippedSubviews={true}
+        windowSize={7}
+        maxToRenderPerBatch={10}
+        updateCellsBatchingPeriod={50}
+        initialNumToRender={10}
     />
   );
 };

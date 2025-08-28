@@ -8,7 +8,7 @@ export const RenderNotes = ({notes_raw}: Props) => {
 
   const notes = notes_raw.split("|").map((note) => note.trim());
 
-  if (notes.length > 1)
+  if (notes.length > 0)
     return (
       <>
         <Text style={styles.text}>Notes:</Text>
