@@ -1,33 +1,32 @@
 {
   "expo": {
-    "name": "RDR2Roadmap",
+    "name": "RDR2 Missions",
     "slug": "RDR2Roadmap",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo.webp",
+    "icon": "./assets/mini1.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/logo.webp",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "transparent"
+      "backgroundColor": "#c22e2e"
     },
     "ios": {
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo.webp",
-        "backgroundColor": "transparent"
+        "foregroundImage": "./assets/mini1.png",
+        "backgroundColor": "#c22e2e"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/logo.webp"
     },
-    "plugins": [
-      "expo-localization",
-      "expo-font"
-    ]
+    "plugins": ["expo-localization", "expo-font"]
   }
 }
