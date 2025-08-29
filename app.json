@@ -29,6 +29,8 @@
     "web": {
       "favicon": "./assets/logo.webp"
     },
+    "scheme": "rdr2missions",
+
     "plugins": [
       "expo-localization",
       "expo-font",
