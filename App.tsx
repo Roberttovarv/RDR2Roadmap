@@ -10,7 +10,8 @@ import { Smokum_400Regular } from "@expo-google-fonts/smokum";
 import { Colors } from "./utils/colors";
 import { useEffect, useState } from "react";
 import { initMissions } from "./src/storage/missions";
-import { initAdsWithConsent } from "./src/ads/Ads";
+import { initAdsWithConsent } from "./src/ads/adsManager";
+
 
 export default function App() {
   const [npa, setNpa] = useState<boolean>(true)
@@ -28,7 +29,7 @@ export default function App() {
     (async () => {
       const {requestNonPersonalizedAdsOnly} = await initAdsWithConsent()
       setNpa(requestNonPersonalizedAdsOnly)
-    })
+    })();
   }, []);
 
   if (!fontsLoaded) return null;
