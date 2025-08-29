@@ -14,7 +14,8 @@
     },
     "ios": {
       "buildNumber": "1.0.0",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.techmonkey.rdr2missions"
     },
     "android": {
       "versionCode": 1,
@@ -22,14 +23,23 @@
         "foregroundImage": "./assets/mini1.png",
         "backgroundColor": "#c22e2e"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.techmonkey.rdr2missions"
     },
     "web": {
       "favicon": "./assets/logo.webp"
     },
     "plugins": [
       "expo-localization",
-      "expo-font"
+      "expo-font",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android_app_id": "ca-app-pub-7709518058475752~1299512836",
+          "ios_app_id": "ca-app-pub-7709518058475752~4791518368"
+        }
+      ],
+      "react-native-iap"
     ],
     "extra": {
       "eas": {

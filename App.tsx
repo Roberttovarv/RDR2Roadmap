@@ -8,19 +8,29 @@ import {
 import { Rye_400Regular } from "@expo-google-fonts/rye";
 import { Smokum_400Regular } from "@expo-google-fonts/smokum";
 import { Colors } from "./utils/colors";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { initMissions } from "./src/storage/missions";
-import { DeviceLangTag, LANG } from "./device";
+import { initAdsWithConsent } from "./src/ads/Ads";
+
 export default function App() {
+  const [npa, setNpa] = useState<boolean>(true)
   const [fontsLoaded] = useFonts({
     EduNSWACTFoundation_400Regular,
     Rye_400Regular,
     EduNSWACTFoundation_600SemiBold,
     Smokum_400Regular,
   });
+
+
   useEffect(() => {
-    initMissions()
+    initMissions();
+
+    (async () => {
+      const {requestNonPersonalizedAdsOnly} = await initAdsWithConsent()
+      setNpa(requestNonPersonalizedAdsOnly)
+    })
   }, []);
+
   if (!fontsLoaded) return null;
   return (
     <SafeAreaView style={styles.container}>
