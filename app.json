@@ -24,9 +24,6 @@
       },
       "edgeToEdgeEnabled": true
     },
-    "web": {
-      "favicon": "./assets/logo.webp"
-    },
     "plugins": [
       "expo-localization",
       "expo-font"
