@@ -22,7 +22,8 @@
         "foregroundImage": "./assets/mini1.png",
         "backgroundColor": "#c22e2e"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.techmonkey.rdr2missions"
     },
     "plugins": [
       "expo-localization",
