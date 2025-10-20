@@ -1,49 +1,48 @@
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { useRoute, RouteProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
-import {  LANG } from "../../device";
+import { LANG } from "../../device";
 import { RenderHeader } from "../components/MissionDetails/RenderHeader";
 import { RenderBody } from "../components/MissionDetails/RenderBody";
 import { RenderFooter } from "../components/MissionDetails/RenderFooter";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useLayoutEffect } from "react";
+import { ScreenBackground } from "../components/ScreenBackground";
 
 type MissionDetailsRoute = RouteProp<RootStackParamList, "MissionDetails">;
 type Nav = NativeStackNavigationProp<RootStackParamList, "MissionDetails">;
 
 export const MissionDetail = () => {
-  const navigation = useNavigation<Nav>()
+  const navigation = useNavigation<Nav>();
 
-  useLayoutEffect(()=> {
-    navigation.setOptions({title: LANG ==="es" ? "Detalles" : "Details"})
-  })
+  useLayoutEffect(() => {
+    navigation.setOptions({ title: LANG === "es" ? "Detalles" : "Details" });
+  });
   const { params } = useRoute<MissionDetailsRoute>();
   const { mission } = params;
-  const {
-    mission_en,
-    mission_es,
-    sym,
-  } = mission;
+  const { mission_en, mission_es, sym } = mission;
 
   const title = LANG === "es" ? mission_es : mission_en;
 
   return (
     <>
-      <ImageBackground {...imageProps}>
-        <View style={styles.screen}>
-          <View style={styles.upper_half}>
-            <View>
-              <RenderHeader sym={sym} title={title} />
+      <ScreenBackground bg={1}>
+        <ImageBackground {...imageProps}>
+          <View style={styles.screen}>
+            <View style={styles.upper_half}>
+              <View>
+                <RenderHeader sym={sym} title={title} />
+              </View>
+              <View>
+                <RenderBody mission={mission} />
+              </View>
             </View>
             <View>
-              <RenderBody mission={mission} />
+              <RenderFooter mission={mission} />
             </View>
           </View>
-          <View>
-            <RenderFooter mission={mission} />
-          </View>
-        </View>
-      </ImageBackground>
+        </ImageBackground>
+      </ScreenBackground>
     </>
   );
 };
@@ -56,7 +55,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   upper_half: {
-gap: 16  }
+    gap: 16,
+  },
 });
 
 const imageProps = {

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { FlatList, Pressable, Text, View, StyleSheet } from "react-native";
 import { DrawerNavigationProp } from "@react-navigation/drawer";
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { Colors, Opacity } from "../../utils/colors";
 import { getAllMissions } from "../storage/missions";
 import { LANG } from "../../device";
@@ -50,16 +50,21 @@ export const YourProgress = () => {
   const [pendingMissions, setPendingMissions] = useState<Mission[]>([]);
   const navigation = useNavigation<Nav>();
 
-  useEffect(() => {
-    const load = async () => {
-      const all = await getAllMissions();
-      const done = all.filter((m) => m.completed).length;
-      const pending = all.filter((m) => !m.completed);
-      setCompleted(done);
-      setPendingMissions(pending);
-    };
-    load();
+    const load = useCallback(async () => {
+    const all = await getAllMissions();
+    const done = all.filter((m) => m.completed).length;
+    const pending = all.filter((m) => !m.completed);
+    setCompleted(done);
+    setPendingMissions(pending);
   }, []);
+  useEffect(() => {
+    load()
+  }, [load]);
+
+  useFocusEffect(
+    useCallback(()=> {
+    load();
+  }, [load]))
 
   const total = 177;
   const percent = Math.round((completed / total) * 100);

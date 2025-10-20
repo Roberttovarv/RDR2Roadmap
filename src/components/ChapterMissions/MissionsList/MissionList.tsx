@@ -48,6 +48,7 @@ const Header = ({ source }: { source: ImageSourcePropType }) => {
           marginBottom: -5,
         }}
         resizeMode="cover"
+        fadeDuration={0}
       />
       <GuideModal />
     </>
@@ -121,11 +122,11 @@ export const MissionList = ({ chapter }: Props) => {
         <RenderChapterItem item={item} onToggleCompleted={onToggleCompleted} />
       )}
       ListHeaderComponent={<Header source={headerSource} />}
-              removeClippedSubviews={true}
-        windowSize={7}
-        maxToRenderPerBatch={10}
-        updateCellsBatchingPeriod={50}
-        initialNumToRender={10}
+      removeClippedSubviews={true}
+      windowSize={7}
+      maxToRenderPerBatch={10}
+      updateCellsBatchingPeriod={50}
+      initialNumToRender={10}
     />
   );
 };
