@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { FlatList, Pressable, Text, View, StyleSheet } from "react-native";
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
@@ -57,10 +57,6 @@ export const YourProgress = () => {
     setCompleted(done);
     setPendingMissions(pending);
   }, []);
-  useEffect(() => {
-    load()
-  }, [load]);
-
   useFocusEffect(
     useCallback(()=> {
     load();

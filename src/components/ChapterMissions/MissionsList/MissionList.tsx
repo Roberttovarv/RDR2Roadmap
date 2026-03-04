@@ -3,7 +3,6 @@ import { RenderChapterItem } from "./components/RenderChapterItem";
 import { Mission } from "../../../../types";
 import {
   useCallback,
-  useEffect,
   useLayoutEffect,
   useMemo,
   useState,
@@ -75,9 +74,6 @@ export const MissionList = ({ chapter }: Props) => {
     const data = await getMissionsByChapter(chapter);
     setMissions(data);
   };
-  useEffect(() => {
-    load();
-  }, [chapter]);
   useFocusEffect(
     useCallback(() => {
       load();

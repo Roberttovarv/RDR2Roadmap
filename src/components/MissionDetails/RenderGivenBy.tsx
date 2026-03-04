@@ -43,7 +43,7 @@ export const RenderGivenBy = ({
 
   return (
     <Text style={styles.text}>
-      {LANG === "es" ? "Otorgada por: " : "Given by: "} {given_by}
+      {LANG === "es" ? "Otorgada por: " : "Given by: "} {given_by?.normalize("NFC")}
     </Text>
   );
 };
@@ -51,7 +51,7 @@ export const RenderGivenBy = ({
 const styles = StyleSheet.create({
   text: {
     fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 30,
+    fontSize: 26,
     paddingHorizontal: 16,
     color: Colors.darkest_brown,
   },

@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { FlatList } from "react-native";
 import { Mission, RootStackParamList } from "../../../types";
 import { RenderTypeMissionItem } from "./MissionTypeList/RenderTypeMissionItem";
@@ -40,9 +40,6 @@ export const TypeMissionList = ({ sym }: Props) => {
     const data = await getMissionsByType(sym);
     setMissions(data);
   };
-  useEffect(() => {
-    load();
-  }, [sym]);
   useFocusEffect(
     useCallback(() => {
       load();

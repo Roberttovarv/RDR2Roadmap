@@ -30,8 +30,8 @@ start, end,
 
   return (
     <>
-      <Text style={styles.content}>{`${mission_start_argument} ${start}`}</Text>
-      <Text style={styles.content}>{`${mission_end_argument} ${end}`}</Text>
+      <Text style={styles.content}>{`${mission_start_argument?.normalize("NFC")} ${start}`}</Text>
+      <Text style={styles.content}>{`${mission_end_argument?.normalize("NFC")} ${end}`}</Text>
     </>
   );
 };
@@ -39,7 +39,7 @@ start, end,
 const styles = StyleSheet.create({
   content: {
     fontFamily: "EduNSWACTFoundation_400Regular",
-    fontSize: 30,
+    fontSize: 22,
     paddingHorizontal: 16,
     color: Colors.darkest_brown
   },
