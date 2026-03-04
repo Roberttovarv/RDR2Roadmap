@@ -75,11 +75,11 @@ export const TypeMissionList = ({ sym }: Props) => {
         />
       )}
       ListHeaderComponent={<HeaderImage sym={sym} />}
-              removeClippedSubviews={true}
-        windowSize={7}
-        maxToRenderPerBatch={10}
-        updateCellsBatchingPeriod={50}
-        initialNumToRender={10}
+      removeClippedSubviews={true}
+      windowSize={7}
+      maxToRenderPerBatch={10}
+      updateCellsBatchingPeriod={50}
+      initialNumToRender={10}
     />
   );
 };
