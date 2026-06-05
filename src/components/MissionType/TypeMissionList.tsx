@@ -34,6 +34,8 @@ export const TypeMissionList = ({ sym }: Props) => {
     navigation.setOptions({
       title: getTypeTitle(sym),
       headerRight: () => <FilterButton value={filter} onChange={setFilter} />,
+          headerBackButtonDisplayMode: "minimal",
+
     });
   }, [navigation, sym, filter]);
   const load = async () => {

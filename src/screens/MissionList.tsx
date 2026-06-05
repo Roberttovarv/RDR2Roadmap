@@ -91,6 +91,7 @@ export const MissionList = ({ chapter }: Props) => {
     navigation.setOptions({
       title,
       headerRight: () => <FilterButton value={filter} onChange={setFilter} />,
+      
     });
   }, [navigation, chapter, filter]);
 

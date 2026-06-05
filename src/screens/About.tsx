@@ -7,7 +7,7 @@ import { LANG } from "../../device";
 export const About = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Image source={require("../../assets/logo.webp")} style={styles.logo} />
+      <Image source={require("../../assets/pfp.png")} style={styles.logo} />
 
       <Text style={styles.title}>
         {LANG === "es" ? "Sobre la aplicación" : "About the App"}
@@ -48,7 +48,11 @@ const styles = StyleSheet.create({
   logo: {
     width: 140,
     height: 140,
-    resizeMode: "contain",
+    borderRadius: 70,
+    borderWidth: 3,
+    borderColor: Colors.burdeos,
+    overflow: "hidden",
+    resizeMode: "cover",
     marginBottom: 20,
   },
   title: {

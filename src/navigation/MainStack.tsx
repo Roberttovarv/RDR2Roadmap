@@ -19,6 +19,7 @@ export const MainStack = () => (
         headerTintColor: Colors.map,
         headerTitleStyle: { fontFamily: "Rye_400Regular", fontSize: 20 },
         headerTitleAlign: "center",
+        headerShadowVisible: false,
       }}
     >
       <Stack.Screen
@@ -31,27 +32,32 @@ export const MainStack = () => (
         name="Chapter"
         component={ChapterScreen}
         listeners={({ navigation }) => ({
-          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false, }),
-          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+          focus: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: true }),
         })}
       />
       <Stack.Screen
         name="MissionDetails"
         component={MissionDetail}
         listeners={({ navigation }) => ({
-          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
-          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+          focus: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: true }),
         })}
       />
       <Stack.Screen
         name="Type"
         component={MissionTypeScreen}
         listeners={({ navigation }) => ({
-          focus: () => navigation.getParent()?.setOptions({ swipeEnabled: false }),
-          blur:  () => navigation.getParent()?.setOptions({ swipeEnabled: true }),
+          focus: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: false }),
+          blur: () =>
+            navigation.getParent()?.setOptions({ swipeEnabled: true }),
         })}
       />
     </Stack.Navigator>
   </ScreenBackground>
 );
-

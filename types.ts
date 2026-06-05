@@ -28,6 +28,7 @@ export type RootStackParamList = {
 export type DrawerParamList = {
   Main: NavigatorScreenParams<RootStackParamList>;          
   SymbolsGuide: undefined;
+  NightmareJob: undefined;
   About: undefined;
   YourProgress: undefined;
 };
